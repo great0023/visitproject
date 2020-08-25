@@ -1,4 +1,3 @@
-
 const initNewData = {
     fnameth: "",
     lnameth: "",
@@ -394,31 +393,6 @@ const initNewData = {
     relationshiprisky: ""
 }
 
-//function adddata() {
-//    var sangkud = document.getElementById("sangkud").value;
-//    var school = document.getElementById("school").value;
-//    var fnameth = document.getElementById("fnameth").value;
-//    var lnameth = document.getElementById("lnameth").value;
-//    var idstudent = document.getElementById("idstudent").value;
-
-//    var data = {
-//        sangkud: sangkud,
-//        school: school,
-//        fname: fnameth,
-//        lname: lnameth,
-//        id: idstudent
-//    };
-
-//for(var i = 0; i <data.length ; i++) { 
-//    document.getElementById("showdata").innerHTML += '<tr><th scope="row">'+ i +' </th><td><li><a href="#" id ="showsangkud"></a></li></td><td><li><a href="#" id ="showschool"></a></li></td><td><li><a href="#" id ="showfnameth"></a></li></td><td><li><a href="#" id ="showlnameth"></a></li></td><td><li><a href="#" id ="showid"></a></li></td></tr>'
-//    document.getElementById("showsangkud").value = data.sangkud;
-//    document.getElementById("showschool").value = data.school;
-//    document.getElementById("showfnameth").value = data.fname;
-//    document.getElementById("showlnameth").value = data.lname;
-//    document.getElementById("showid").value = data.id;
-//}
-// }
-
 function getAge() {
     var day = parseInt(document.getElementById("birthday").value);
     var month = parseInt(document.getElementById("birthmonth").value);
@@ -535,75 +509,6 @@ function callImage() {
 }
 callImage()
 
-
-
-function sec() {
-    // Declare variables
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
-
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-
-
-function autoTab2(obj, typeCheck) {
-
-    if (typeCheck == 1) {
-        var pattern = new String("_-____-_____-_-__");
-        var pattern_ex = new String("-");
-    } else {
-        var pattern = new String("__-____-____");
-        var pattern_ex = new String("-");
-    }
-    var returnText = new String("");
-    var obj_l = obj.value.length;
-    var obj_l2 = obj_l - 1;
-    for (i = 0; i < pattern.length; i++) {
-        if (obj_l2 == i && pattern.charAt(i + 1) == pattern_ex) {
-            returnText += obj.value + pattern_ex;
-            obj.value = returnText;
-        }
-    }
-    if (obj_l >= pattern.length) {
-        obj.value = obj.value.substr(0, pattern.length);
-    }
-}
-
-// function linkaddess(){
-//     const Dataaddess = document.getElementById("addess").value
-//     const Datamooban = document.getElementById("mooban").value
-//     const Datamootee = document.getElementById("mootee").value
-//     const Datadistric = document.getElementById("distric").value
-//     const Datacity = document.getElementById("city").value
-//     const Dataprovince = document.getElementById("province").value
-//     const Datazipcode = document.getElementById("zipcode").value
-// // สร้าง checkbox  1 ใน  html
-// // รับมาเป็น boolen (true,false)
-// // สร้างเงื่อนไข if () ถ้าเป็น true ลิ้ง data addess  ถ้า false ให้เคลียร์ช่อง input
-
-
-//     const Datanewaddess = document.getElementById("newaddess").value
-//     const Datanewmooban = document.getElementById("newmooban").value
-//     const Datanewmootee = document.getElementById("newmootee").value
-//     const Datanewdistric = document.getElementById("newdistric").value
-//     const Datanewcity = document.getElementById("newcity").value
-//     const Datanewprovince = document.getElementById("newprovince").value
-//     const Datanewzipcode = document.getElementById("newzipcode").value
-// }
-
-
 function loadfirebase() {
     var firebaseConfig = {
         apiKey: "AIzaSyBq3vfRH6O7Kq3avBGZ5SbV2zLXhHvmDlU",
@@ -621,108 +526,10 @@ function loadfirebase() {
     loadData()
 }
 
-
-
-
-
 async function addNew() {
-    //    let listData = await getData('datastudent')
-    //    const sendData = listData[id]
+    
     const db = firebase.firestore();
-    // const Datafnameth = document.getElementById("fnameth").value
-    // const Datalnameth = document.getElementById("lnameth").value
-    // const Dataidstudent = document.getElementById("idstudent").value
-    // const Datasangkud = document.getElementById("sangkud").value
-    // const Dataschool = document.getElementById("school").value
-
-    // const Dataterm = document.getElementById("term").value
-    // const Dataschoolyear = document.getElementById("schoolyear").value
-    // const Datanametitle = document.getElementById("nametitle").value
-    // const Datafnameen = document.getElementById("fnameen").value
-    // const Datalnameen = document.getElementById("lnameen").value
-    // const Datanickname = document.getElementById("nickname").value
-    // const Datasex = document.getElementById("sex").value
-    // const Dataclassroom = document.getElementById("classroom").value
-    // const Dataroom = document.getElementById("room").value
-    // const Datanumberinroom = document.getElementById("numberinroom").value
-    // const Dataidschool = document.getElementById("idschool").value
-    // const Databirthday = document.getElementById("birthday").value
-    // const Databirthmonth = document.getElementById("birthmonth").value
-    // const Databirthyear = document.getElementById("birthyear").value
-    // const Dataage = document.getElementById("age").value
-    // const Dataagemonth = document.getElementById("agemonth").value
-    // const Databloodtype = document.getElementById("bloodtype").value
-    // const Dataweight = document.getElementById("weight").value
-    // const Dataheight = document.getElementById("height").value
-    // const DataBMI = document.getElementById("BMI").value
-    // const Datarace = document.getElementById("race").value
-    // const Datanationality = document.getElementById("nationality").value
-    // const Datareligion = document.getElementById("religion").value
-    // const Datadisadvantages = document.getElementById("disadvantages").value
-    // const Datadisabilitytype = document.getElementById("disabilitytype").value
-    // const Datasick = document.getElementById("sick").value
-    // const Dataeducationlevel = document.getElementById("educationlevel").value
-    // const Dataoldschool = document.getElementById("oldschool").value
-    // const Datacityoldschool = document.getElementById("cityoldschool").value
-    // const Dataprovinceoldschool = document.getElementById("provinceoldschool").value
-    // const Datasangkudoldschool = document.getElementById("sangkudoldschool").value
-    // const DataGPAoldschool = document.getElementById("GPAoldschool").value
-    // const Datatel = document.getElementById("tel").value
-    // const Dataline = document.getElementById("line").value
-    // const Datafacebook = document.getElementById("facebook").value
-    // const Dataaddess = document.getElementById("addess").value
-    // const Datamooban = document.getElementById("mooban").value
-    // const Datamootee = document.getElementById("mootee").value
-    // const Datadistric = document.getElementById("distric").value
-    // const Datacity = document.getElementById("city").value
-    // const Dataprovince = document.getElementById("province").value
-    // const Datazipcode = document.getElementById("zipcode").value
-    // const Datanewaddess = document.getElementById("newaddess").value
-    // const Datanewmooban = document.getElementById("newmooban").value
-    // const Datanewmootee = document.getElementById("newmootee").value
-    // const Datanewdistric = document.getElementById("newdistric").value
-    // const Datanewcity = document.getElementById("newcity").value
-    // const Datanewprovince = document.getElementById("newprovince").value
-    // const Datanewzipcode = document.getElementById("newzipcode").value
-    // const Datafriendnamein1 = document.getElementById("friendnamein1").value
-    // const Datafriendnicknamein1 = document.getElementById("friendnicknamein1").value
-    // const Datafriendschoolin1 = document.getElementById("friendschoolin1").value
-    // const Datafriendtelin1 = document.getElementById("friendtelin1").value
-    // const Datafriendnamein2 = document.getElementById("friendnamein2").value
-    // const Datafriendnicknamein2 = document.getElementById("friendnicknamein2").value
-    // const Datafriendschoolin2 = document.getElementById("friendschoolin2").value
-    // const Datafriendtelin2 = document.getElementById("friendtelin2").value
-    // const Datafriendnameout1 = document.getElementById("friendnameout1").value
-    // const Datafriendnicknameout1 = document.getElementById("friendnicknameout1").value
-    // const Datafriendschoolout1 = document.getElementById("friendschoolout1").value
-    // const Datafriendtelout1 = document.getElementById("friendtelout1").value
-    // const Datafriendnameout2 = document.getElementById("friendnameout2").value
-    // const Datafriendnicknameout2 = document.getElementById("friendnicknameout2").value
-    // const Datafriendschoolout2 = document.getElementById("friendschoolout2").value
-    // const Datafriendtelout2 = document.getElementById("friendtelout2").value
-
-    // var warnings = "";
-    // if (Datafnameth.length < 2) {
-    //     warnings += 'You need a valid  <br/>';
-    // }
-    // if (Dataschool.length < 2) {
-    //     warnings += 'You need a valid  <br/>';
-    // }
-    // if (Datalnameth.length < 2) {
-    //     warnings += 'You need a valid  <br/>';
-    // }
-    // if (Datasangkud.length < 2) {
-    //     warnings += 'You need a valid  <br/>';
-    // }
-    // if (Dataidstudent.length < 2) {
-    //     warnings += 'You need a valid  <br/>';
-    // }
-    // if (warnings != "") {
-    //     console.log(warnings);
-    //     errors.style.display = 'block';
-    //     errors.innerHTML = warnings;
-    // } else {
-    await db.collection('datastudent').add(initNewData).then(res => {
+       await db.collection('datastudent').add(initNewData).then(res => {
         // console.log('res', );
 
         window.location = "form1.html?id="+res.id;
@@ -745,11 +552,9 @@ async function save() {
 
 
     let data = await getDataId('datastudent', idx)
-    console.log('data',data['iddad']);
 
-
-    let doc = document.getElementById("iddad")
-    console.log('doc',doc);
+    // let doc = document.getElementById("iddad")
+    // console.log('doc',doc);
 
     Object.keys(data).forEach(keyName => {
         let doc = document.getElementById(keyName)
@@ -759,57 +564,16 @@ async function save() {
 
     })
 
-
-    console.log('data',data['iddad']);
-
-
-
-
-
-
-     db.collection('datastudent').doc(idx).update(data).then(res => {
+    db.collection('datastudent').doc(idx).update(data).then(res => {
         //  console.log('res', res);
      })
-
-
-    console.log('save');
-
 
 }
 
 async function updatedata(id) {
     window.location = "form1.html?id=" + id
-
-    // let listData = await getData('datastudent')
-    // console.log('listData', listData)
-    // const sendData = listData[id]
-    // var dataoldfnameth = sendData.fnameth;
-    // var dataoldlnameth = sendData.lnameth;
-    // var dataoldidstudent = sendData.idstudent;
-    // var dataoldsangkud = sendData.sangkud;
-    // var dataoldschool = sendData.school;
-    // // window.location = "form1.html";
-    // document.getElementById('fnameth').value = dataoldfnameth;
-    // document.getElementById('lnameth').value = dataoldlnameth;
-    // document.getElementById('idstudent').value = dataoldidstudent;
-    // document.getElementById('sangkud').value = dataoldsangkud;
-    // document.getElementById('school').value = dataoldschool;
-
-    // const db = firebase.firestore();
-    // // db.collection('datastudent').doc(id).delete();
-    // await db.collection('datastudent').add({
-    //     fnameth: sendData.fnameth,
-    //     lnameth: sendData.lnameth,
-    //     idstudent: sendData.idstudent,
-    //     sangkud: sendData.sangkud,
-    //     school: sendData.school
-    // });
-
-
-    // reloadData()
-
+    loadDataToInput()
 }
-
 
 async function deleteData(id) {
 
@@ -819,7 +583,6 @@ async function deleteData(id) {
     //window.location.reload();
     reloadData()
 }
-
 
 async function reloadData() {
 
@@ -960,6 +723,24 @@ function formatCid(id) {
         if(index === 5) returnValue += "-"
         if(index === 10) returnValue += "-"
         if(index === 12) returnValue += "-"
+        returnValue += docValue[index]
+        
+    }
+
+    document.getElementById(id).value = returnValue
+
+
+}
+
+function formattel(id) {
+    let docValue = document.getElementById(id).value
+    // console.log('docValue',docValue);
+    let returnValue = ''
+    // 1-2345-67890-12-3
+
+    for (let index = 0; index < docValue.length; index++) {
+        if(index === 2) returnValue += "-"
+        if(index === 6) returnValue += "-"
         returnValue += docValue[index]
         
     }

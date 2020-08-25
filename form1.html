@@ -59,17 +59,17 @@
                 <br>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
-                        aria-valuemax="100"><a href="form1.html" class="btn btn-dark"> ตอนที่ 1 </a></div>
+                        aria-valuemax="100"><a onclick="NextPage('form1.html')" class="btn btn-dark"> ตอนที่ 1 </a></div>
                     <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
-                        aria-valuemax="100"><a href="index2.html" class="btn btn-warning"> ตอนที่ 2 </a></div>
+                        aria-valuemax="100"><a onclick="NextPage('index2.html')" class="btn btn-warning"> ตอนที่ 2 </a></div>
                     <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
-                        aria-valuemax="100"><a href="index3.html" class="btn btn-info"> ตอนที่ 3 </a></div>
+                        aria-valuemax="100"><a onclick="NextPage('index3.html')" class="btn btn-info"> ตอนที่ 3 </a></div>
                     <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
-                        aria-valuemax="100"><a href="index4.html" class="btn btn-dark"> ตอนที่ 4 </a></div>
+                        aria-valuemax="100"><a onclick="NextPage('index4.html')" class="btn btn-dark"> ตอนที่ 4 </a></div>
                     <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
-                        aria-valuemax="100"><a href="index5.html" class="btn btn-warning"> ตอนที่ 5 </a></div>
+                        aria-valuemax="100"><a onclick="NextPage('index5.html')" class="btn btn-warning"> ตอนที่ 5 </a></div>
                     <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
-                        aria-valuemax="100"><a href="index6.html" class="btn btn-info"> ตอนที่ 6 </a></div>
+                        aria-valuemax="100"><a onclick="NextPage('index6.html')" class="btn btn-info"> ตอนที่ 6 </a></div>
                 </div>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
@@ -135,9 +135,9 @@
                     <div class="form-row">
                         <div class="col-md-auto">
                             <label for="sex">เพศ</label><br>
-                            <input type="radio" value="male" name="gender" id="sex" required />
+                            <input type="radio" value="male"  name="gender" id="sex" required />
                             <span>ชาย</span>
-                            <input type="radio" value="female" name="gender" id="sex" required />
+                            <input type="radio" value="female"   name="gender" id="sex" required />
                             <span>หญิง</span>
                         </div>
                         <div class="col-md">
@@ -289,14 +289,14 @@
                         </div>
                         <div class="col-md">
                             <label for="religion">นับถือศาสนา</label><br>
-                            <input type="radio" value="Buddhism" name="religion" id="religion" required />
+                            <input type="radio"   value="Buddhism" name="religion" id="religion" required />
                             <span>พุทธ</span>
-                            <input type="radio" value="Christ" name="religion" id="religion" required />
+                            <input type="radio"   value="Christ" name="religion" id="religion" required />
                             <span>คริสต์</span>
-                            <input type="radio" value="islam" name="religion" id="religion" required />
+                            <input type="radio"   value="islam" name="religion" id="religion" required />
                             <span>อิสลาม</span>
                             <br>
-                            <input type="radio" value="other" name="religion" required />
+                            <input type="radio"   value="other" name="religion" required />
                             <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="name" id="religion"
                                 placeholder="ระบุ" />
                             </label>
@@ -323,9 +323,9 @@
                     <div class="form-row">
                         <div class="col-md">
                             <label for="sick">โรคประจำตัว</label><br>
-                            <input type="radio" value="" name="sick" id="sick" required />
+                            <input type="radio"   value="" name="sick" id="sick" required />
                             <span>ไม่มีโรคประจำตัว</span>
-                            <input type="radio" value="" name="sick" required />
+                            <input type="radio"   value="" name="sick" required />
                             <span>มีโรคประจำตัว&nbsp;&nbsp;</span><input type="text" name="sick" id="sick"
                                 placeholder="ระบุ" /></label>
                         </div>
@@ -380,7 +380,7 @@
                         <div class="col-md">
                             <label for="tel">โทรศัพท์</label>
                             <input type="text" class="form-control" id="tel" placeholder="โทรศัพท์"
-                                onkeyup="autoTab2(this,2)" required>
+                                onkeyup="formattel('tel')" required>
                             <div class="invalid-tooltip">
                                 โปรดระบุ
                             </div>
@@ -533,7 +533,7 @@
                         <div class="col-md">
                             <label for="friendtelin1">โทรศัพท์</label>
                             <input type="text" class="form-control" id="friendtelin1" placeholder="โทรศัพท์"
-                                onkeyup="autoTab2(this,2)" required>
+                                onkeyup="formattel('friendtelin1')" required>
                             <div class="invalid-tooltip">
                                 โปรดระบุ
                             </div>
@@ -567,7 +567,7 @@
                         <div class="col-md">
                             <label for="friendtelin2">โทรศัพท์</label>
                             <input type="text" class="form-control" id="friendtelin2" placeholder="โทรศัพท์"
-                                onkeyup="autoTab2(this,2)" required>
+                                onkeyup="formattel('friendtelin2')" required>
                             <div class="invalid-tooltip">
                                 โปรดระบุ
                             </div>
@@ -604,7 +604,7 @@
                         <div class="col-md">
                             <label for="friendtelout1">โทรศัพท์</label>
                             <input type="text" class="form-control" id="friendtelout1" placeholder="โทรศัพท์"
-                                onkeyup="autoTab2(this,2)" required>
+                                onkeyup="formattel('friendtelout1')" required>
                             <div class="invalid-tooltip">
                                 โปรดระบุ
                             </div>
@@ -638,7 +638,7 @@
                         <div class="col-md">
                             <label for="friendtelout2">โทรศัพท์</label>
                             <input type="text" class="form-control" id="friendtelout2" placeholder="โทรศัพท์"
-                                onkeyup="autoTab2(this,2)" required>
+                                onkeyup="formattel('friendtelout2')" required>
                             <div class="invalid-tooltip">
                                 โปรดระบุ
                             </div>

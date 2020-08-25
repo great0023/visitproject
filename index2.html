@@ -17,13 +17,19 @@
         <div class="row justify-content-end"><a href="index.html" class="btn btn-danger">LOGOUT</a></div><br>
         <br>
         <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="form1.html" class="btn btn-dark"> ตอนที่ 1 </a></div>
-            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index2.html" class="btn btn-warning"> ตอนที่ 2 </a></div>
-            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index3.html" class="btn btn-info"> ตอนที่ 3 </a></div>
-            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index4.html" class="btn btn-dark"> ตอนที่ 4 </a></div>
-            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index5.html" class="btn btn-warning"> ตอนที่ 5 </a></div>
-            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index6.html" class="btn btn-info"> ตอนที่ 6 </a></div>
-          </div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                aria-valuemax="100"><a onclick="NextPage('form1.html')" class="btn btn-dark"> ตอนที่ 1 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                aria-valuemax="100"><a onclick="NextPage('index2.html')" class="btn btn-warning"> ตอนที่ 2 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                aria-valuemax="100"><a onclick="NextPage('index3.html')" class="btn btn-info"> ตอนที่ 3 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                aria-valuemax="100"><a onclick="NextPage('index4.html')" class="btn btn-dark"> ตอนที่ 4 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                aria-valuemax="100"><a onclick="NextPage('index5.html')" class="btn btn-warning"> ตอนที่ 5 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                aria-valuemax="100"><a onclick="NextPage('index6.html')" class="btn btn-info"> ตอนที่ 6 </a></div>
+        </div>
           <div class="progress">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
         </div>
@@ -91,7 +97,7 @@
                     </div>
                     <div class="col-md">
                         <label for="teldad">โทรศัพท์</label>
-                        <input type="text" class="form-control" id="teldad" placeholder="โทรศัพท์" onkeyup="autoTab2(this,2)" required>
+                        <input type="text" class="form-control" id="teldad" placeholder="โทรศัพท์" onkeyup="formattel('teldad')" required>
                         <div class="invalid-tooltip">
                             โปรดระบุ
                         </div>
@@ -103,7 +109,7 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="idmom">เลขประจำตัวประชาชน</label>
-                        <input type="text" class="form-control" id="idmom" placeholder="เลขประจำตัวประชาชน" onkeyup="autoTab2(this,1)" required>
+                        <input type="text" class="form-control" id="idmom" placeholder="เลขประจำตัวประชาชน" onkeyup="formatCid('idmom')" required>
                         <div class="invalid-tooltip">
                             โปรดระบุ
                         </div>
@@ -157,7 +163,7 @@
                     </div>
                     <div class="col-md">
                         <label for="friendtelin2">โทรศัพท์</label>
-                        <input type="text" class="form-control" id="telmom" placeholder="โทรศัพท์" onkeyup="autoTab2(this,2)" required>
+                        <input type="text" class="form-control" id="telmom" placeholder="โทรศัพท์" onkeyup="formattel('telmom')" required>
                         <div class="invalid-tooltip">
                             โปรดระบุ
                         </div>
@@ -169,19 +175,19 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="statusdadmom">สถานภาพของบิดามารดา</label><br>
-                        <input type="radio"  name="statusdadmom" id="statusdadmom" required />
+                        <input type="radio"    name="statusdadmom" id="statusdadmom" required />
                         <span>อยู๋ด้วยกัน</span><br>
-                        <input type="radio"  name="statusdadmom" id="statusdadmom" required />
+                        <input type="radio"    name="statusdadmom" id="statusdadmom" required />
                         <span>หย่าร้าง</span><br>
-                        <input type="radio"  name="statusdadmom" id="statusdadmom" required />
+                        <input type="radio"    name="statusdadmom" id="statusdadmom" required />
                         <span>บิดาเสียชีวิต</span><br>
-                        <input type="radio"  name="statusdadmom" id="statusdadmom" required />
+                        <input type="radio"    name="statusdadmom" id="statusdadmom" required />
                         <span>มารดาเสียชีวิต</span><br>
-                        <input type="radio"  name="statusdadmom" id="statusdadmom" required />
+                        <input type="radio"    name="statusdadmom" id="statusdadmom" required />
                         <span>บิดาสมรสใหม่</span><br>
-                        <input type="radio"  name="statusdadmom" id="statusdadmom" required />
+                        <input type="radio"    name="statusdadmom" id="statusdadmom" required />
                         <span>มาดาสมรสใหม่</span><br>
-                        <input type="radio"  name="statusdadmom" required />
+                        <input type="radio"    name="statusdadmom" required />
                         <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="statusdadmom"
                             id="statusdadmom" placeholder="ระบุ" /></label>
                     </div>
@@ -192,7 +198,7 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="idmom">เลขประจำตัวประชาชน</label>
-                        <input type="text" class="form-control" id="๊idparent" placeholder="เลขประจำตัวประชาชน" onkeyup="autoTab2(this,1)" required>
+                        <input type="text" class="form-control" id="๊idparent" placeholder="เลขประจำตัวประชาชน" onkeyup="formatCid('idparent')" required>
                         <div class="invalid-tooltip">
                             โปรดระบุ
                         </div>
@@ -246,7 +252,7 @@
                     </div>
                     <div class="col-md">
                         <label for="friendtelin2">โทรศัพท์</label>
-                        <input type="text" class="form-control" id="telparent" placeholder="โทรศัพท์"  onkeyup="autoTab2(this,2)" required>
+                        <input type="text" class="form-control" id="telparent" placeholder="โทรศัพท์"  onkeyup="formattel('telparent')" required>
                         <div class="invalid-tooltip">
                             โปรดระบุ
                         </div>
@@ -323,9 +329,9 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="sick">โรคประจำตัว</label><br>
-                        <input type="radio"  name="sickparent" id="sickparent" required />
+                        <input type="radio"    name="sickparent" id="sickparent" required />
                         <span>ไม่มีโรคประจำตัว</span>
-                        <input type="radio"  name="sickparent" required />
+                        <input type="radio"    name="sickparent" required />
                         <span>มีโรคประจำตัว&nbsp;&nbsp;</span><input type="text" name="sickparent" id="sickparent"
                             placeholder="ระบุ" /></label>
                     </div>
@@ -337,9 +343,9 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="bro">ข้อมูลพี่น้อง</label><br>
-                        <input type="radio"  name="bro" id="bro" required />
+                        <input type="radio"    name="bro" id="bro" required />
                         <span>เป็นลูกคนเดียว</span><br>
-                        <input type="radio"  name="bro" required />
+                        <input type="radio"    name="bro" required />
                         <span>มีพี่น้อง</span>
                     </div>
                 </div>
@@ -403,15 +409,15 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="Parentalstatus">สถานภาพของบิดามารดา</label><br>
-                        <input type="radio"  name="Parentalstatus" id="Parentalstatus" required />
+                        <input type="radio"    name="Parentalstatus" id="Parentalstatus" required />
                         <span>มีคนพิการ/เจ็บป่วยเรื้อรัง</span><br>
-                        <input type="radio"  name="Parentalstatus" id="Parentalstatus" required />
+                        <input type="radio"    name="Parentalstatus" id="Parentalstatus" required />
                         <span>มีผู้สูงอายุ(มากกว่า 60 ปี)</span><br>
-                        <input type="radio"  name="Parentalstatus" id="Parentalstatus" required />
+                        <input type="radio"    name="Parentalstatus" id="Parentalstatus" required />
                         <span>มีคนอายุ 15-60 ปีที่ว่างงาน (ไม่ใช่นักเรียน/นักศึกษา) </span><br>
-                        <input type="radio"  name="Parentalstatus" id="Parentalstatus" required />
+                        <input type="radio"    name="Parentalstatus" id="Parentalstatus" required />
                         <span>เป็นพ่อ/แม่เลี้ยงเดี่ยว </span><br>
-                        <input type="radio"  name="Parentalstatus" id="Parentalstatus" required />
+                        <input type="radio"    name="Parentalstatus" id="Parentalstatus" required />
                         <span>ครัวเรือนไม่มีภาระพึ่งพิง</span><br>
                     </div>
                 </div>
@@ -421,28 +427,28 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="livewith">นักเรียนพักอาศัยอยู่กับ</label><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>อยู่กับบิดาและมารดา </span><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>อยู่กับบิดา </span><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>อยู่กับมารดา </span><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>อยู่กับพี่/น้อง (ไม่ได้อยู่กับบิดา มารดา) </span> <br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>อยู่กับญาติผู้ใหญ่/ผู้ปกครองที่ไม่ใช่บิดา มารดา เกี่ยวข้องเป็น&nbsp;&nbsp;</span><input
                             type="text" name="livewith" id="livewith"
                             placeholder="ระบุ" /></label><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>อยู่กับเพื่อน/คนรู้จัก</span><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>พักอยู่คนเดียว (เช่าหอพัก/บ้านเช่า) &nbsp;&nbsp;</span><input type="text"
                             name="livewith" id="livewith" placeholder="ระบุ" /></label><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>พักอยู่ที่โรงเรียน (นักเรียนประจำ)</span><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>พักอยู่กับมูลนิธิ/วัด/นายจ้าง</span><br>
-                        <input type="radio"  name="livewith" id="livewith" required />
+                        <input type="radio"    name="livewith" id="livewith" required />
                         <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="livewith"
                             id="livewith" placeholder="ระบุ" /></label><br>
                     </div>
@@ -454,13 +460,13 @@
                         <br>
 
                         <label for="livestatus">สถานะที่อยู่อาศัย</label><br>
-                        <input type="radio"  name="livestatus" id="livestatus" required />
+                        <input type="radio"    name="livestatus" id="livestatus" required />
                         <span>บ้านของตนเอง </span><br>
-                        <input type="radio"  name="livestatus" id="livestatus" required />
+                        <input type="radio"    name="livestatus" id="livestatus" required />
                         <span>บ้านพัก/บ้านเช่า </span><br>
-                        <input type="radio"  name="livestatus" id="livestatus" required />
+                        <input type="radio"    name="livestatus" id="livestatus" required />
                         <span>อาศัยอยู่กับผู้อื่น</span><br>
-                        <input type="radio"  name="livestatus" id="livestatus" required />
+                        <input type="radio"    name="livestatus" id="livestatus" required />
                         <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="livestatus"
                             id="livestatus" placeholder="ระบุ" /></label>
                     </div>
@@ -468,13 +474,13 @@
                         <h5>9. ลักษณะกายภาพของบ้าน</h5>
                         <br>
                         <label for="physicalhome">ลักษณะกายภาพของบ้าน</label><br>
-                        <input type="radio"  name="physicalhome" id="physicalhome" required />
+                        <input type="radio"    name="physicalhome" id="physicalhome" required />
                         <span>บ้านชั้นเดียว </span><br>
-                        <input type="radio"  name="physicalhome" id="physicalhome" required />
+                        <input type="radio"    name="physicalhome" id="physicalhome" required />
                         <span>บ้านสองชั้น </span><br>
-                        <input type="radio"  name="physicalhome" id="physicalhome" required />
+                        <input type="radio"    name="physicalhome" id="physicalhome" required />
                         <span>ทาวน์เฮ้าส์</span><br>
-                        <input type="radio"  name="physicalhome" id="physicalhome" required />
+                        <input type="radio"    name="physicalhome" id="physicalhome" required />
                         <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="physicalhome"
                             id="physicalhome" placeholder="ระบุ" /></label>
                     </div>
@@ -486,11 +492,11 @@
                         <br>
 
                         <label for="safetyhome">ความปลอดภัยของที่อยู่อาศัย</label><br>
-                        <input type="radio"  name="safetyhome" id="safetyhome" required />
+                        <input type="radio"    name="safetyhome" id="safetyhome" required />
                         <span>ดี/มั่นคง/ปลอดภัย </span><br>
-                        <input type="radio"  name="safetyhome" id="safetyhome" required />
+                        <input type="radio"    name="safetyhome" id="safetyhome" required />
                         <span>พอใช้ </span><br>
-                        <input type="radio"  name="safetyhome" id="safetyhome" required />
+                        <input type="radio"    name="safetyhome" id="safetyhome" required />
                         <span>ควรปรับปรุง </span>
                     </div>
                     <div class="col-md">
@@ -499,9 +505,9 @@
 
 
                         <label for="environmenthome">สภาพแวดล้อมบริเวณบ้าน</label><br>
-                        <input type="radio"  name="environmenthome" id="environmenthome" required />
+                        <input type="radio"    name="environmenthome" id="environmenthome" required />
                         <span>ปลอดภัย</span><br>
-                        <input type="radio"  name="environmenthome" id="environmenthome" required />
+                        <input type="radio"    name="environmenthome" id="environmenthome" required />
                         <span>เสี่ยง&nbsp;&nbsp;</span><input type="text" name="environmenthome"
                             id="environmenthome" placeholder="ระบุ" /></label>
                     </div>
@@ -512,9 +518,9 @@
                         <h5>12. แหล่งไฟฟ้าหลัก </h5>
                         <br>
                         <label for="electrical">แหล่งไฟฟ้าหลัก</label><br>
-                        <input type="radio"  name="electrical" id="electrical" required />
+                        <input type="radio"    name="electrical" id="electrical" required />
                         <span>ไม่มีไฟฟ้า/ไม่มีเครื่องกำเนิดไฟฟ้าชนิดอื่น ๆ </span><br>
-                        <input type="radio"  name="electrical" id="electrical" required />
+                        <input type="radio"    name="electrical" id="electrical" required />
                         <span>มีไฟฟ้า&nbsp;&nbsp;</span><input type="text" name="electrical"
                             id="electrical" placeholder="ระบุ" /></label>
                     </div>
@@ -522,13 +528,13 @@
                         <h5>13. แหล่งน้ำดื่ม </h5>
                         <br>
                         <label for="water">แหล่งน้ำดื่ม</label><br>
-                        <input type="radio"  name="water" id="water" required />
+                        <input type="radio"    name="water" id="water" required />
                         <span>น้ำดื่มบรรจุขวด/ตู้หยอดน้ำ </span><br>
-                        <input type="radio"  name="water" id="water" required />
+                        <input type="radio"    name="water" id="water" required />
                         <span> น้ำประปา</span><br>
-                        <input type="radio"  name="water" id="water" required />
+                        <input type="radio"    name="water" id="water" required />
                         <span>น้ำบ่อ/น้ำบาดาล </span><br>
-                        <input type="radio"  name="water" id="water" required />
+                        <input type="radio"    name="water" id="water" required />
                         <span>น้ำฝน/น้ำประปาภูเขา/ลำธาร</span>
                     </div>
                 </div>
@@ -539,15 +545,15 @@
                         <br>
 
                         <label for="vehicle">ยานพาหนะในครัวเรือน</label><br>
-                        <input type="radio"  name="vehicle" id="vehicle" required />
+                        <input type="radio"    name="vehicle" id="vehicle" required />
                         <span>รถยนต์นั่งส่วนบุคคล </span><br>
-                        <input type="radio"  name="vehicle" id="vehicle" required />
+                        <input type="radio"    name="vehicle" id="vehicle" required />
                         <span> รถปิกอัพ/รถบรรทุกเล็ก/รถตู้ </span><br>
-                        <input type="radio"  name="vehicle" id="vehicle" required />
+                        <input type="radio"    name="vehicle" id="vehicle" required />
                         <span>รถไถ/รถเกี่ยวข้าว/รถประเภทเดียวกัน </span><br>
-                        <input type="radio"  name="vehicle" id="vehicle" required />
+                        <input type="radio"    name="vehicle" id="vehicle" required />
                         <span>รถมอเตอร์ไซต์/เรือประมงพื้นบ้าน (ขนาดเล็ก)</span><br>
-                        <input type="radio"  name="vehicle" id="vehicle" required />
+                        <input type="radio"    name="vehicle" id="vehicle" required />
                         <span>ไม่มียานพาหนะในครัวเรือน</span>
                     </div>
 
@@ -558,17 +564,17 @@
 
 
                         <label for="longschooltohome">ระยะทางจากบ้านถึงโรงเรียน</label><br>
-                        <input type="radio"  name="longschooltohome" id="longschooltohome" required />
+                        <input type="radio"    name="longschooltohome" id="longschooltohome" required />
                         <span>0-5 กิโลเมตร </span><br>
-                        <input type="radio"  name="longschooltohome" id="longschooltohome" required />
+                        <input type="radio"    name="longschooltohome" id="longschooltohome" required />
                         <span>6-10 กิโลเมตร </span><br>
-                        <input type="radio"  name="longschooltohome" id="longschooltohome" required />
+                        <input type="radio"    name="longschooltohome" id="longschooltohome" required />
                         <span>11-15 กิโลเมตร</span><br>
-                        <input type="radio"  name="longschooltohome" id="longschooltohome" required />
+                        <input type="radio"    name="longschooltohome" id="longschooltohome" required />
                         <span>16-20 กิโลเมตร</span><br>
-                        <input type="radio"  name="longschooltohome" id="longschooltohome" required />
+                        <input type="radio"    name="longschooltohome" id="longschooltohome" required />
                         <span>21-40 กิโลเมตร</span><br>
-                        <input type="radio"  name="longschooltohome" id="longschooltohome" required />
+                        <input type="radio"    name="longschooltohome" id="longschooltohome" required />
                         <span>40 กิโลเมตรขึ้นไป</span>
                     </div>
                 </div>
@@ -578,13 +584,13 @@
                         <h5>16. ระยะเวลาในการเดินทางจากบ้านถึงโรงเรียน </h5>
                         <br>
                         <label for="timeschooltohome">ระยะเวลาในการเดินทางจากบ้านถึงโรงเรียน</label><br>
-                        <input type="radio"  name="timeschooltohome" id="timeschooltohome" required />
+                        <input type="radio"    name="timeschooltohome" id="timeschooltohome" required />
                         <span>น้อยกว่า 30 นาที</span><br>
-                        <input type="radio"  name="timeschooltohome" id="timeschooltohome" required />
+                        <input type="radio"    name="timeschooltohome" id="timeschooltohome" required />
                         <span>30-50 นาที</span><br>
-                        <input type="radio"  name="timeschooltohome" id="timeschooltohome" required />
+                        <input type="radio"    name="timeschooltohome" id="timeschooltohome" required />
                         <span>1-3 ชั่วโมง</span><br>
-                        <input type="radio"  name="timeschooltohome" id="timeschooltohome" required />
+                        <input type="radio"    name="timeschooltohome" id="timeschooltohome" required />
                         <span> มากกว่า 3 ชั่วโมง</span>
                     </div>
 
@@ -595,9 +601,9 @@
 
 
                         <label for="environmentschooltohome">สภาพแวดล้อมระหว่างการเดินทางจากที่พักมาโรงเรียน</label><br>
-                        <input type="radio"  name="environmentschooltohome" id="environmentschooltohome" required />
+                        <input type="radio"    name="environmentschooltohome" id="environmentschooltohome" required />
                         <span>ปลอดภัย</span><br>
-                        <input type="radio"  name="environmentschooltohome" id="environmentschooltohome" required />
+                        <input type="radio"    name="environmentschooltohome" id="environmentschooltohome" required />
                         <span>เสี่ยงอันตราย&nbsp;&nbsp; </span><input type="text" name="environmentschooltohome"
                             id="environmentschooltohome" placeholder="ระบุ" /></label>
                     </div>
@@ -608,13 +614,13 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="howschooltohome">การเดินทางมาโรงเรียนของนักเรียน</label><br>
-                        <input type="radio"  name="howschooltohome" id="howschooltohome" required />
+                        <input type="radio"    name="howschooltohome" id="howschooltohome" required />
                         <span>เดิน</span><br>
-                        <input type="radio"  name="howschooltohome" id="howschooltohome" required />
+                        <input type="radio"    name="howschooltohome" id="howschooltohome" required />
                         <span>จักรยาน</span><br>
-                        <input type="radio"  name="howschooltohome" id="howschooltohome" required />
+                        <input type="radio"    name="howschooltohome" id="howschooltohome" required />
                         <span>มอเตอร์ไซต์/เรือ/รถส่วนตัวทุกประเภท</span><br>
-                        <input type="radio"  name="howschooltohome" id="howschooltohome" required />
+                        <input type="radio"    name="howschooltohome" id="howschooltohome" required />
                         <span>รถโรงเรียน/รถรับจ้าง/รถประจำทาง </span>
                     </div>
                     <div class="col-md">
@@ -632,41 +638,41 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="relationshipofdad">19.1 พ่อ</label><br>
-                        <input type="radio"  name="relationshipofdad" id="relationshipofdad" required />
+                        <input type="radio"    name="relationshipofdad" id="relationshipofdad" required />
                         <span>สนิทสนมดี พูดคุยปรึกษาหารือได้เสมอ</span><br>
-                        <input type="radio"  name="relationshipofdad" id="relationshipofdad" required />
+                        <input type="radio"    name="relationshipofdad" id="relationshipofdad" required />
                         <span>สนิทสนมดี แต่พูดคุยปรึกษาได้เป็นบางเรื่อง</span><br>
-                        <input type="radio"  name="relationshipofdad" id="relationshipofdad" required />
+                        <input type="radio"    name="relationshipofdad" id="relationshipofdad" required />
                         <span>ปานกลาง พูดคุยกันได้ แต่ไม่สนิทสนม</span><br>
-                        <input type="radio"  name="relationshipofdad" id="relationshipofdad" required />
+                        <input type="radio"    name="relationshipofdad" id="relationshipofdad" required />
                         <span>ไม่ดี แต่ไม่ถึงกับทอดทิ้งหรือไม่เอาใจใส่</span><br>
-                        <input type="radio"  name="relationshipofdad" id="relationshipofdad" required />
+                        <input type="radio"    name="relationshipofdad" id="relationshipofdad" required />
                         <span>ทอดทิ้ง ไม่เอาใจใส่ หรือลงโทษรุนแรง</span><br>
-                        <input type="radio"  name="relationshipofdad" id="relationshipofdad" required />
+                        <input type="radio"    name="relationshipofdad" id="relationshipofdad" required />
                         <span>ตอบไม่ได้ เพราะไม่เคยเลี้ยงดู</span><br>
-                        <input type="radio"  name="relationshipofdad" id="relationshipofdad" required />
+                        <input type="radio"    name="relationshipofdad" id="relationshipofdad" required />
                         <span>ไม่มีข้อมูล</span><br>
-                        <input type="radio"  name="relationshipofdad" id="relationshipofdad" required />
+                        <input type="radio"    name="relationshipofdad" id="relationshipofdad" required />
                         <span>อื่น ๆ &nbsp;&nbsp;</span><input type="text" name="relationshipofdad"
                             id="relationshipofdad" placeholder="ระบุ" /></label>
                     </div>
                     <div class="col-md">
                         <label for="relationshipofmom">19.2 แม่</label><br>
-                        <input type="radio"  name="relationshipofmom" id="relationshipofmom" required />
+                        <input type="radio"    name="relationshipofmom" id="relationshipofmom" required />
                         <span>สนิทสนมดี พูดคุยปรึกษาหารือได้เสมอ</span><br>
-                        <input type="radio"  name="relationshipofmom" id="relationshipofmom" required />
+                        <input type="radio"    name="relationshipofmom" id="relationshipofmom" required />
                         <span>สนิทสนมดี แต่พูดคุยปรึกษาได้เป็นบางเรื่อง</span><br>
-                        <input type="radio"  name="relationshipofmom" id="relationshipofmom" required />
+                        <input type="radio"    name="relationshipofmom" id="relationshipofmom" required />
                         <span>ปานกลาง พูดคุยกันได้ แต่ไม่สนิทสนม</span><br>
-                        <input type="radio"  name="relationshipofmom" id="relationshipofmom" required />
+                        <input type="radio"    name="relationshipofmom" id="relationshipofmom" required />
                         <span>ไม่ดี แต่ไม่ถึงกับทอดทิ้งหรือไม่เอาใจใส่</span><br>
-                        <input type="radio"  name="relationshipofmom" id="relationshipofmom" required />
+                        <input type="radio"    name="relationshipofmom" id="relationshipofmom" required />
                         <span>ทอดทิ้ง ไม่เอาใจใส่ หรือลงโทษรุนแรง</span><br>
-                        <input type="radio"  name="relationshipofmom" id="relationshipofmom" required />
+                        <input type="radio"    name="relationshipofmom" id="relationshipofmom" required />
                         <span>ตอบไม่ได้ เพราะไม่เคยเลี้ยงดู</span><br>
-                        <input type="radio"  name="relationshipofmom" id="relationshipofmom" required />
+                        <input type="radio"    name="relationshipofmom" id="relationshipofmom" required />
                         <span>ไม่มีข้อมูล</span><br>
-                        <input type="radio"  name="relationshipofmom" id="relationshipofmom" required />
+                        <input type="radio"    name="relationshipofmom" id="relationshipofmom" required />
                         <span>อื่น ๆ &nbsp;&nbsp;</span><input type="text" name="relationshipofmom"
                             id="relationshipofmom" placeholder="ระบุ" /></label>
                     </div>
@@ -675,21 +681,21 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="relationshipofparent">19.3 ผู้ปกครอง</label><br>
-                        <input type="radio"  name="relationshipofparent" id="relationshipofparent" required />
+                        <input type="radio"    name="relationshipofparent" id="relationshipofparent" required />
                         <span>สนิทสนมดี พูดคุยปรึกษาหารือได้เสมอ</span><br>
-                        <input type="radio"  name="relationshipofparent" id="relationshipofparent" required />
+                        <input type="radio"    name="relationshipofparent" id="relationshipofparent" required />
                         <span>สนิทสนมดี แต่พูดคุยปรึกษาได้เป็นบางเรื่อง</span><br>
-                        <input type="radio"  name="relationshipofparent" id="relationshipofparent" required />
+                        <input type="radio"    name="relationshipofparent" id="relationshipofparent" required />
                         <span>ปานกลาง พูดคุยกันได้ แต่ไม่สนิทสนม</span><br>
-                        <input type="radio"  name="relationshipofparent" id="relationshipofparent" required />
+                        <input type="radio"    name="relationshipofparent" id="relationshipofparent" required />
                         <span>ไม่ดี แต่ไม่ถึงกับทอดทิ้งหรือไม่เอาใจใส่</span><br>
-                        <input type="radio"  name="relationshipofparent" id="relationshipofparent" required />
+                        <input type="radio"    name="relationshipofparent" id="relationshipofparent" required />
                         <span>ทอดทิ้ง ไม่เอาใจใส่ หรือลงโทษรุนแรง</span><br>
-                        <input type="radio"  name="relationshipofparent" id="relationshipofparent" required />
+                        <input type="radio"    name="relationshipofparent" id="relationshipofparent" required />
                         <span>ตอบไม่ได้ เพราะไม่เคยเลี้ยงดู</span><br>
-                        <input type="radio"  name="relationshipofparent" id="relationshipofparent" required />
+                        <input type="radio"    name="relationshipofparent" id="relationshipofparent" required />
                         <span>ไม่มีข้อมูล</span><br>
-                        <input type="radio"  name="relationshipofparent" id="relationshipofparent" required />
+                        <input type="radio"    name="relationshipofparent" id="relationshipofparent" required />
                         <span>อื่น ๆ&nbsp;&nbsp; </span><input type="text" name="relationshipofparent"
                             id="relationshipofparent" placeholder="ระบุ" /></label>
                     </div>
@@ -700,21 +706,21 @@
                         <h5>20. ในครอบครัวนักเรียนสนิทสนมกับใครมากที่สุด </h5>
                         <br>
                             <label for="toprelationship">ในครอบครัวนักเรียนสนิทสนมกับใครมากที่สุด</label><br>
-                            <input type="radio"  name="toprelationship" id="toprelationship" required />
+                            <input type="radio"    name="toprelationship" id="toprelationship" required />
                             <span>พ่อ</span><br>
-                            <input type="radio"  name="toprelationship" id="toprelationship" required />
+                            <input type="radio"    name="toprelationship" id="toprelationship" required />
                             <span>แม่</span><br>
-                            <input type="radio"  name="toprelationship" id="toprelationship" required />
+                            <input type="radio"    name="toprelationship" id="toprelationship" required />
                             <span>พี่สาว</span><br>
-                            <input type="radio"  name="toprelationship" id="toprelationship" required />
+                            <input type="radio"    name="toprelationship" id="toprelationship" required />
                             <span>น้องสาว</span><br>
-                            <input type="radio"  name="toprelationship" id="toprelationship" required />
+                            <input type="radio"    name="toprelationship" id="toprelationship" required />
                             <span>พี่ชาย</span><br>
-                            <input type="radio"  name="toprelationship" id="toprelationship" required />
+                            <input type="radio"    name="toprelationship" id="toprelationship" required />
                             <span>น้องชาย</span><br>
-                            <input type="radio"  name="toprelationship" id="toprelationship" required />
+                            <input type="radio"    name="toprelationship" id="toprelationship" required />
                             <span>ผู้ปกครอง</span><br>
-                            <input type="radio"  name="toprelationship" id="toprelationship" required />
+                            <input type="radio"    name="toprelationship" id="toprelationship" required />
                             <span>อื่น ๆ &nbsp;&nbsp;</span><input type="text" name="toprelationship"
                                 id="toprelationship" placeholder="ระบุ" /></label>
                         </div>
@@ -724,24 +730,24 @@
                             <br>
 
                             <label for="consultfamily">เมื่อเวลาทุกข์ใจ/มีปัญหา ส่วนใหญ่นักเรียนปรึกษา</label><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>คนในครอบครัว (พ่อ แม่ หรือผู้ปกครอง) </span><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>พี่น้อง</span><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>ญาติ</span><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>เพื่อน</span><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>ครู</span><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>เก็บไว้ในใจ ไม่เล่าให้ใครฟัง</span><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>เพื่อนในโลกออนไลน์</span><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>Hotline&nbsp;&nbsp;</span><input type="text" name="consultfamily"
                                 id="consultfamily" placeholder="ระบุ" /></label><br>
-                            <input type="radio"  name="consultfamily" id="consultfamily" required />
+                            <input type="radio"    name="consultfamily" id="consultfamily" required />
                             <span>อื่น ๆ &nbsp;&nbsp;</span><input type="text" name="consultfamily"
                                 id="consultfamily" placeholder="ระบุ" /></label>
                         </div>
@@ -750,7 +756,7 @@
             <br>
                 <a onclick="NextPage('form1.html')" class="btn btn-secondary">&laquo; Previous</a>
                 <button class="btn btn-success" type="submit" onclick="save()" >SAVE</button>
-                <a href="index3.html" class="btn btn-primary" >Next &raquo;</a>
+                <a  onclick="NextPage('index3.html')" class="btn btn-primary" >Next &raquo;</a>
         </form>
     </div>
 </body>
