@@ -142,8 +142,11 @@
                         </div>
                         <div class="col-md">
                             <label for="id">เลขประจำตัวประชาชน</label>
+                            <!-- <input type="text" class="form-control" id="idstudent" name="idstudent"
+                                placeholder="เลขประจำตัวประชาชน" onkeyup="autoTab2(this,1)" required> -->
+
                             <input type="text" class="form-control" id="idstudent" name="idstudent"
-                                placeholder="เลขประจำตัวประชาชน" onkeyup="autoTab2(this,1)" required>
+                            placeholder="เลขประจำตัวประชาชน" maxlength="13" onchange="formatCid('idstudent')" required>
                             <div class="invalid-tooltip">
                                 โปรดระบุ
                             </div>
@@ -644,8 +647,8 @@
                 </div>
                 <br>
                 <a href="list.html" class="btn btn-secondary">&laquo; Previous</a>
-                <button class="btn btn-success" onclick="addNew()">SAVE</button>
-                <a href="index2.html" class="btn btn-primary" >Next &raquo;</a>
+                <button class="btn btn-success" onclick="save()">SAVE</button>
+                <a  class="btn btn-primary"  onclick="NextPage('index2.html')" >Next &raquo;</a>
             </form>
         </div>
     </body>

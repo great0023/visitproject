@@ -37,7 +37,7 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="iddad">เลขประจำตัวประชาชน</label>
-                        <input type="text" class="form-control" id="๊iddad" placeholder="เลขประจำตัวประชาชน" onkeyup="autoTab2(this,1)"  required>
+                        <input type="text" class="form-control" id="iddad" placeholder="เลขประจำตัวประชาชน" maxlength="13" onchange="formatCid('iddad')"  required>
                         <div class="invalid-tooltip">
                             โปรดระบุ
                         </div>
@@ -103,7 +103,7 @@
                 <div class="form-row">
                     <div class="col-md">
                         <label for="idmom">เลขประจำตัวประชาชน</label>
-                        <input type="text" class="form-control" id="๊idmom" placeholder="เลขประจำตัวประชาชน" onkeyup="autoTab2(this,1)" required>
+                        <input type="text" class="form-control" id="idmom" placeholder="เลขประจำตัวประชาชน" onkeyup="autoTab2(this,1)" required>
                         <div class="invalid-tooltip">
                             โปรดระบุ
                         </div>
@@ -748,9 +748,9 @@
                     </div>
                 </div>
             <br>
-                <a href="form1.html" class="btn btn-secondary">&laquo; Previous</a>
-                <button class="btn btn-success" type="submit">SAVE</button>
-                <a href="index3.html" class="btn btn-primary">Next &raquo;</a>
+                <a onclick="NextPage('form1.html')" class="btn btn-secondary">&laquo; Previous</a>
+                <button class="btn btn-success" type="submit" onclick="save()" >SAVE</button>
+                <a href="index3.html" class="btn btn-primary" >Next &raquo;</a>
         </form>
     </div>
 </body>
