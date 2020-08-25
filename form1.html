@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <div class="row justify-content-end"><a href="index.html" class="btn btn-danger">LOGOUT</a></div><br>
+            <form action="/">
+                <div>
+                    <h1>Student Form</h1>
+                </div>
+                <div>
+                    <h1>แบบเก็บข้อมูลนักเรียนรายบุคคล</h1>
+                    <div class="col-md">
+                        <label for="sangkud">สังกัด</label>
+                        <input type="text" class="form-control" id="sangkud" name="sangkud" placeholder="สังกัด"
+                            required>
+                        <div class="invalid-tooltip">
+                            โปรดระบุ
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="school">โรงเรียน</label>
+                            <input type="text" class="form-control" id="school" name="school" placeholder="โรงเรียน"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="term">ภาคการศึกษา</label>
+                            <input type="text" class="form-control" id="term" placeholder="ภาคการศึกษา" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="schoolyear">ปีการศึกษา</label>
+                            <input type="text" class="form-control" id="schoolyear" placeholder="ปีการศึกษา" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                        aria-valuemax="100"><a href="form1.html" class="btn btn-dark"> ตอนที่ 1 </a></div>
+                    <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                        aria-valuemax="100"><a href="index2.html" class="btn btn-warning"> ตอนที่ 2 </a></div>
+                    <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                        aria-valuemax="100"><a href="index3.html" class="btn btn-info"> ตอนที่ 3 </a></div>
+                    <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                        aria-valuemax="100"><a href="index4.html" class="btn btn-dark"> ตอนที่ 4 </a></div>
+                    <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                        aria-valuemax="100"><a href="index5.html" class="btn btn-warning"> ตอนที่ 5 </a></div>
+                    <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0"
+                        aria-valuemax="100"><a href="index6.html" class="btn btn-info"> ตอนที่ 6 </a></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="9" aria-valuemin="0" aria-valuemax="100" style="width: 9%"></div>
+                </div>
+                <br>
+                <div class="section">
+                    <h4>ตอนที่ 1 ข้อมูลพื้นฐาน</h4>
+                    <br>
+                    <div class="form-row">
+                        <div class="col-md-auto">
+                            <label for="nametitle">คำนำหน้าชื่อ</label>
+                            <select class="form-control" id="nametitle">
+                                <option>นาย</option>
+                                <option>นาง</option>
+                                <option>นางสาว</option>
+                                <option>เด็กชาย</option>
+                                <option>เด็กหญิง</option>
+                            </select>
+                        </div>
+                        <div class="col-md">
+                            <label for="fnameth">ชื่อ</label>
+                            <input type="text" class="form-control" id="fnameth" name="fnameth" placeholder="ชื่อ"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="lnameth">ชื่อสกุล</label>
+                            <input type="text" class="form-control" id="lnameth" name="lnameth" placeholder="ชื่อสกุล"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="fname">ชื่อ(ภาษาอังกฤษ)</label>
+                            <input type="text" class="form-control" id="fnameen" placeholder="ชื่อ(ภาษาอังกฤษ)"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="validationTooltip02">ชื่อสกุล(ภาษาอังกฤษ)</label>
+                            <input type="text" class="form-control" id="lnameen" placeholder="ชื่อสกุล(ภาษาอังกฤษ)"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="nickname">ชื่อเล่น</label>
+                            <input type="text" class="form-control" id="nickname" placeholder="ชื่อเล่น" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-auto">
+                            <label for="sex">เพศ</label><br>
+                            <input type="radio" value="male" name="gender" id="sex" required />
+                            <span>ชาย</span>
+                            <input type="radio" value="female" name="gender" id="sex" required />
+                            <span>หญิง</span>
+                        </div>
+                        <div class="col-md">
+                            <label for="id">เลขประจำตัวประชาชน</label>
+                            <input type="text" class="form-control" id="idstudent" name="idstudent"
+                                placeholder="เลขประจำตัวประชาชน" onkeyup="autoTab2(this,1)" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="id">เลขที่ทางราชการออกให้(กรณีเด็กต่างด้าว)</label>
+                            <input type="text" class="form-control" id="idstudent1" placeholder="เลขที่ทางราชการออกให้">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="classroom">ชั้นเรียน</label>
+                            <input type="text" class="form-control" id="classroom" placeholder="ชั้นเรียน" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="room">ห้อง</label>
+                            <input type="text" class="form-control" id="room" placeholder="ห้อง" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="numberinroom">เลขที่</label>
+                            <input type="text" class="form-control" id="numberinroom" placeholder="เลขที่" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="idschool">เลขประจำตัวนักเรียน</label>
+                            <input type="text" class="form-control" id="idschool" placeholder="เลขประจำตัวนักเรียน"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="birthday">เกิดวันที่</label>
+                            <input type="number" class="form-control" id="birthday" onchange="getAge()"
+                                placeholder="วันที่" max="31" min="1" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="birthmonth">เดือน</label>
+                            <select class="custom-select" id="birthmonth" onchange="getAge()" required>
+                                <option selected disabled value="">เดือน</option>
+                                <option value="1">มกราคม</option>
+                                <option value="2">กุมภาพันธ์</option>
+                                <option value="3">มีนาคม</option>
+                                <option value="4">เมษายน</option>
+                                <option value="5">พฤษภาคม</option>
+                                <option value="6">มิถุนายน</option>
+                                <option value="7">กรกฎาคม</option>
+                                <option value="8">สิงหาคม</option>
+                                <option value="9">กันยายน</option>
+                                <option value="10">ตุลาคม</option>
+                                <option value="11">พฤศจิกายน</option>
+                                <option value="12">ธันวาคม</option>
+                            </select>
+                        </div>
+                        <div class="col-md">
+                            <label for="birthyear">พ.ศ.</label>
+                            <input type="number" class="form-control" id="birthyear" placeholder="พ.ศ." min="1943"
+                                max="2563" onchange="getAge()" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="age">อายุ</label>
+                            <input type="text" class="form-control" name="age" id="age" readonly>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="agemonth">เดือน</label>
+                            <input type="text" class="form-control" name="agemonth" id="agemonth" readonly>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="bloodtype">หมู่โลหิต</label>
+                            <select class="form-control" id="bloodtype">
+                                <option selected disabled value="">หมู่โลหิต</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>O</option>
+                                <option>AB</option>
+                            </select>
+                        </div>
+                        <div class="col-md">
+                            <label for="weight">น้ำหนัก</label>
+                            <input type="number" class="form-control" id="weight" placeholder="น้ำหนัก" min="0"
+                                onchange="calculateBmi()" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="height">ส่วนสูง</label>
+                            <input type="number" class="form-control" id="height" placeholder="ส่วนสูง" min="0"
+                                onchange="calculateBmi()" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="BMI">รูปร่าง</label>
+                            <input type="text" class="form-control" id="BMI" readonly>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="race">เชื้อชาติ</label>
+                            <input type="text" class="form-control" id="race" placeholder="เชื้อชาติ" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="nationality">สัญชาติ</label>
+                            <input type="text" class="form-control" id="nationality" placeholder="สัญชาติ" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="religion">นับถือศาสนา</label><br>
+                            <input type="radio" value="Buddhism" name="religion" id="religion" required />
+                            <span>พุทธ</span>
+                            <input type="radio" value="Christ" name="religion" id="religion" required />
+                            <span>คริสต์</span>
+                            <input type="radio" value="islam" name="religion" id="religion" required />
+                            <span>อิสลาม</span>
+                            <br>
+                            <input type="radio" value="other" name="religion" required />
+                            <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="name" id="religion"
+                                placeholder="ระบุ" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="disadvantages">ประเภทความด้อยโอกาศ</label>
+                            <input type="text" class="form-control" id="disadvantages" placeholder="ประเภทความด้อยโอกาศ"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="disabilitytype">ประเภทความพิการ</label>
+                            <input type="text" class="form-control" id="disabilitytype" placeholder="ประเภทความพิการ"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="sick">โรคประจำตัว</label><br>
+                            <input type="radio" value="" name="sick" id="sick" required />
+                            <span>ไม่มีโรคประจำตัว</span>
+                            <input type="radio" value="" name="sick" required />
+                            <span>มีโรคประจำตัว&nbsp;&nbsp;</span><input type="text" name="sick" id="sick"
+                                placeholder="ระบุ" /></label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="educationlevel">จบการศึกษาระดับ</label>
+                            <input type="text" class="form-control" id="educationlevel" placeholder="ระดับการศึกษา"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="oldschool">จากโรงเรียน</label>
+                            <input type="text" class="form-control" id="oldschool" placeholder="โรงเรียน" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="citytoldschool">อำเภอ</label>
+                            <input type="text" class="form-control" id="cityoldschool" placeholder="อำเภอ" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="provinceoldschool">จังหวัด</label>
+                            <input type="text" class="form-control" id="provinceoldschool" placeholder="จังหวัด"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="sangkudoldschool">สังกัด</label>
+                            <input type="text" class="form-control" id="sangkudoldschool" placeholder="สังกัด" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="GPAoldschool">ผลการเรียน</label>
+                            <input type="text" class="form-control" id="GPAoldschool" placeholder="ผลการเรียน" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="tel">โทรศัพท์</label>
+                            <input type="text" class="form-control" id="tel" placeholder="โทรศัพท์"
+                                onkeyup="autoTab2(this,2)" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="line">ID Line</label>
+                            <input type="text" class="form-control" id="line" placeholder="ID line" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="facebook">Facebook</label>
+                            <input type="text" class="form-control" id="facebook" placeholder="Facebook" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="addess">ที่อยู๋ตามทะเบียนบ้าน</label>
+                            <input type="text" class="form-control" id="addess" placeholder="เลขที่" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="mooban">หมู่บ้าน</label>
+                            <input type="text" class="form-control" id="mooban" placeholder="หมู่บ้าน" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="mootee">หมู่ที่</label>
+                            <input type="text" class="form-control" id="mootee" placeholder="หมู่ที่" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="distric">ตำบล</label>
+                            <input type="text" class="form-control" id="distric" placeholder="ตำบล" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="city">อำเภอ</label>
+                            <input type="text" class="form-control" id="city" placeholder="อำเภอ" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="province">จังหวัด</label>
+                            <input type="text" class="form-control" id="province" placeholder="จังหวัด" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="zipcode">รหัสไปรษณีย์</label>
+                            <input type="text" class="form-control" id="zipcode" placeholder="รหัสไปรษณีย์" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="newaddess">ที่อยู๋ปัจจุบัน</label>
+                            <input type="text" class="form-control" id="newaddess" placeholder="เลขที่" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="newmooban">หมู่บ้าน</label>
+                            <input type="text" class="form-control" id="newmooban" placeholder="หมู่บ้าน" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="newmootee">หมู่ที่</label>
+                            <input type="text" class="form-control" id="newmootee" placeholder="หมู่ที่" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="newdistric">ตำบล</label>
+                            <input type="text" class="form-control" id="newdistric" placeholder="ตำบล" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="newcity">อำเภอ</label>
+                            <input type="text" class="form-control" id="newcity" placeholder="อำเภอ" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="newprovince">จังหวัด</label>
+                            <input type="text" class="form-control" id="newprovince" placeholder="จังหวัด" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="newzipcode">รหัสไปรษณีย์</label>
+                            <input type="text" class="form-control" id="newzipcode" placeholder="รหัสไปรษณีย์" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label>เพื่อนสนิทของนักเรียนในโรงเรียน คือ</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="friendnamein1">1. ชื่อ - สกุล</label>
+                            <input type="text" class="form-control" id="friendnamein1" placeholder="ชื่อ - สกุล"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendnicknamein1">ชื่อเล่น</label>
+                            <input type="text" class="form-control" id="friendnicknamein1" placeholder="ชื่อเล่น"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendschoolin1">โรงเรียน</label>
+                            <input type="text" class="form-control" id="friendschoolin1" placeholder="โรงเรียน"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendtelin1">โทรศัพท์</label>
+                            <input type="text" class="form-control" id="friendtelin1" placeholder="โทรศัพท์"
+                                onkeyup="autoTab2(this,2)" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="friendnamein2">2. ชื่อ - สกุล</label>
+                            <input type="text" class="form-control" id="friendnamein2" placeholder="ชื่อ - สกุล"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendnicknamein2">ชื่อเล่น</label>
+                            <input type="text" class="form-control" id="friendnicknamein2" placeholder="ชื่อเล่น"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendschoolin2">โรงเรียน</label>
+                            <input type="text" class="form-control" id="friendschoolin2" placeholder="โรงเรียน"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendtelin2">โทรศัพท์</label>
+                            <input type="text" class="form-control" id="friendtelin2" placeholder="โทรศัพท์"
+                                onkeyup="autoTab2(this,2)" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label>เพื่อนสนิทของนักเรียนนอกโรงเรียน คือ</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="friendnameout1">1. ชื่อ - สกุล</label>
+                            <input type="text" class="form-control" id="friendnameout1" placeholder="ชื่อ - สกุล"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendnicknameout1">ชื่อเล่น</label>
+                            <input type="text" class="form-control" id="friendnicknameout1" placeholder="ชื่อเล่น"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendschoolout1">โรงเรียน</label>
+                            <input type="text" class="form-control" id="friendschoolout1" placeholder="โรงเรียน"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendtelout1">โทรศัพท์</label>
+                            <input type="text" class="form-control" id="friendtelout1" placeholder="โทรศัพท์"
+                                onkeyup="autoTab2(this,2)" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md">
+                            <label for="friendnameout2">2. ชื่อ - สกุล</label>
+                            <input type="text" class="form-control" id="friendnameout2" placeholder="ชื่อ - สกุล"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendnicknameout2">ชื่อเล่น</label>
+                            <input type="text" class="form-control" id="friendnicknameout2" placeholder="ชื่อเล่น"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendschoolout2">โรงเรียน</label>
+                            <input type="text" class="form-control" id="friendschoolout2" placeholder="โรงเรียน"
+                                required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <label for="friendtelout2">โทรศัพท์</label>
+                            <input type="text" class="form-control" id="friendtelout2" placeholder="โทรศัพท์"
+                                onkeyup="autoTab2(this,2)" required>
+                            <div class="invalid-tooltip">
+                                โปรดระบุ
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <a href="list.html" class="btn btn-secondary">&laquo; Previous</a>
+                <button class="btn btn-success" onclick="addNew()">SAVE</button>
+                <a href="index2.html" class="btn btn-primary" >Next &raquo;</a>
+            </form>
+        </div>
+    </body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

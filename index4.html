@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-end"><a href="index.html" class="btn btn-danger">LOGOUT</a></div><br>
+        <br>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="form1.html" class="btn btn-dark"> ตอนที่ 1 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index2.html" class="btn btn-warning"> ตอนที่ 2 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index3.html" class="btn btn-info"> ตอนที่ 3 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index4.html" class="btn btn-dark"> ตอนที่ 4 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index5.html" class="btn btn-warning"> ตอนที่ 5 </a></div>
+            <div class="progress-bar" role="progressbar" style="width: 17%" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100"><a href="index6.html" class="btn btn-info"> ตอนที่ 6 </a></div>
+          </div>   
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 58%"></div>
+          </div>
+            <br>
+        <form action="/">
+            <div class="section">
+                <h4>ตอนที่ 4 ข้อมูลการคัดกรองนักเรียน</h4>
+                <br>
+                <h5>23. ด้านความสามารถพิเศษ/ความสามารถที่โดดเด่นเชิงประจักษ์</h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <label for="specialability">23.1 ความสามารถพิเศษ</label><br>
+                        <input type="radio"  name="specialability" id="specialability" required />
+                        <span>ไม่เด่นชัด/ไม่ชัดเจน ด้าน </span><input type="text" class="form-control"
+                            id="newzipcode" placeholder=" " required>
+                        <input type="radio"  name="specialability" id="specialability" required />
+                        <span>ความสามารถพิเศษ (สามารถตอบได้มากกว่า 1 ข้อ)
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">ดนตรี</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">กีฬา</label></div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">ศิลปะ</label></div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">งานอาชีพ</label></div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                <label class="custom-control-label" for="customCheck5">คอมพิวเดอร์</label></div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                <label class="custom-control-label" for="customCheck6">นาฏศิลป์</label></div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                <label class="custom-control-label" for="customCheck7">อื่นๆ&nbsp;&nbsp;<input type="text"
+                                        class="form-control-inline" id="newzipcode" placeholder=" ">
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md">
+                        <label for="outstandingability">23.2 ความสามารถที่โดดเด่นเชิงประจักษ์</label><br>
+                        <input type="radio"  name="outstandingability" id="outstandingability" required />
+                        <span>ไม่เด่นชัด/ไม่ชัดเจน ด้าน </span><input type="text" class="form-control"
+                            id="newzipcode" placeholder=" " required>
+                        <input type="radio"  name="outstandingability" id="outstandingability" required />
+                        <span>มี กลุ่มสาระ<input type="text" class="form-control" id="newzipcode" placeholder=" "
+                                required>ระบุ<input type="text" class="form-control" id="newzipcode" placeholder=" "
+                                required></span>
+                    </div>
+                </div>
+                <br>
+                <h5>24. ด้านการเรียน </h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">24.1 ผลการเรียน<br>
+                                        <input type="checkbox"  name="danger_gpa"
+                                            id="danger_gpa" />
+                                        <span>ระดับประถมศึกษาผลการเรียนเฉลี่ย 1.00 – 2.00</span><br>
+                                        <input type="checkbox"  name="danger_gpa"
+                                            id="danger_gpa" />
+                                        <span>ระดับมัธยมศึกษาผลการเรียนเฉลี่ย 1.00 – 1.50</span><br>
+                                        <input type="checkbox"  name="danger_gpa"
+                                            id="danger_gpa" />
+                                        <span>ติด 0, ร, มส, มผ </span><br>
+                                        <input type="checkbox"  name="danger_gpa" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_gpa"
+                                            id="danger_gpa" placeholder="ระบุ" />
+
+                                    </td>
+                                    <td>24.1 ผลการเรียน<br>
+                                        <input type="checkbox"  name="problem_gpa"
+                                            id="problem_gpa" />
+                                        <span>ผลการเรียนต่ำกว่า 1.00 </span><br>
+                                        <input type="checkbox"  name="problem_gpa"
+                                            id="problem_gpa" />
+                                        <span>ติด 0, ร, มส, มผ </span><br>
+                                        <input type="checkbox"  name="problem_gpa" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_gpa"
+                                            id="problem_gpa" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">24.2 นิสัยทางการเรียน<br>
+                                        <input type="checkbox"  name="danger_habit"
+                                            id="danger_habit" />
+                                        <span>ไม่เข้าเรียน1- 3 ครั้งโดยไม่มีเหตุผลความจำเป็น</span><br>
+                                        <input type="checkbox"  name="danger_habit"
+                                            id="danger_habit" />
+                                        <span>มาเรียนสาย 3 ครั้ง/สัปดาห์</span><br>
+                                        <input type="checkbox"  name="danger_habit"
+                                            id="danger_habit" />
+                                        <span>มาสายไม่ทันเรียนคาบแรก 3 ครั้งต่อสัปดาห์โดยไม่มีเหตุจำเป็น</span><br>
+                                        <input type="checkbox"  name="danger_habit"
+                                            id="danger_habit" />
+                                        <span>มีเวลาเรียน 80 % ของเวลาเรียนในรายวิชานั้น</span><br>
+                                        <input type="checkbox"  name="danger_habit"
+                                            id="danger_habit" />
+                                        <span>ไม่ส่งงาน 1-2 วิชา</span><br>
+                                        <input type="checkbox"  name="danger_habit" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_habit"
+                                            id="danger_habit" placeholder="ระบุ" />
+                                    </td>
+                                    <td>24.2 นิสัยทางการเรียน<br>
+                                        <input type="checkbox"  name="problem_habit"
+                                            id="problem_habit" />
+                                        <span>ไม่เข้ามากกว่าเรียน 1- 3 ครั้งโดยไม่มีเหตุผลความจำเป็น</span><br>
+                                        <input type="checkbox"  name="problem_habit"
+                                            id="problem_habit" />
+                                        <span>มาสายเกินกว่า 3 ครั้งต่อสัปดาห์</span><br>
+                                        <input type="checkbox"  name="problem_habit"
+                                            id="problem_habit" />
+                                        <span>มาสายไม่ทันเรียนคาบแรกเกินกว่า 3 ครั้งต่อสัปดาห์โดยไม่มีเหตุจำเป็น
+                                        </span><br>
+                                        <input type="checkbox"  name="problem_habit"
+                                            id="problem_habit" />
+                                        <span>มีเวลาเรียน 60 - 80%ของเวลาเรียนในรายวิชานั้น</span><br>
+                                        <input type="checkbox"  name="problem_habit"
+                                            id="problem_habit" />
+                                        <span>ไม่ส่งงานมากกว่า 2 วิชา</span><br>
+                                        <input type="checkbox"  name="problem_habit" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_habit"
+                                            id="problem_habit" placeholder="ระบุ" /></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">24.3 ปัจจัยที่ส่งผลต่อการเรียน<br><br>ระดับประถมศึกษา<br>
+                                        <input type="checkbox"  name="danger_factor_p"
+                                            id="danger_factor_p" />
+                                        <span>อ่านคำพื้นฐานไม่คล่อง</span><br>
+                                        <input type="checkbox"  name="danger_factor_p"
+                                            id="danger_factor_p" />
+                                        <span>เขียนคำพื้นฐานไม่คล่อง</span><br>
+                                        <input type="checkbox"  name="danger_factor_p"
+                                            id="danger_factor_p" />
+                                        <span>มาสายไม่ทันเรียนคาบแรก 3 ครั้งต่อสัปดาห์โดยไม่มีเหตุจำเป็น</span><br>
+                                        <input type="checkbox"  name="danger_factor_p"
+                                            id="danger_factor_p" />
+                                        <span>มีเวลาเรียน 80 % ของเวลาเรียนในรายวิชานั้น</span><br>
+                                        <input type="checkbox"  name="danger_factor_p"
+                                            id="danger_factor_p" />
+                                        <span>ไม่ส่งงาน 1-2 วิชา</span><br>
+                                        <input type="checkbox"  name="danger_factor_p" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_factor_p"
+                                            id="danger_factor_p" placeholder="ระบุ" />
+                                        <br><br>ระดับมัธยมศึกษา<br>
+                                        <input type="checkbox"  name="danger_factor_p"
+                                            id="danger_factor_p" />
+                                        <span>อ่านและเขียนได้ไม่คล่อง</span><br>
+                                        <input type="checkbox"  name="danger_factor_p" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_factor_p"
+                                            id="danger_factor_p" placeholder="ระบุ" />
+
+                                    </td>
+                                    <td>24.3 ปัจจัยที่ส่งผลต่อการเรียน<br><br>ระดับประถมศึกษา<br>
+                                        <input type="checkbox"  name="problem_factor_p"
+                                            id="problem_factor_p" />
+                                        <span>อ่านคำพื้นฐานไม่ได้</span><br>
+                                        <input type="checkbox"  name="problem_factor_p"
+                                            id="problem_factor_p" />
+                                        <span>เขียนคำพื้นฐานไม่ได้</span><br>
+                                        <input type="checkbox"  name="problem_factor_p"
+                                            id="problem_factor_p" />
+                                        <span>ผลการประเมินการอ่าน คิด วิเคราะห์ และเขียนสื่อความไม่ผ่าน</span><br>
+                                        <input type="checkbox"  name="problem_factor_p"
+                                            id="problem_factor_p" />
+                                        <span>คิดคำนวณ บวก ลบ คูณ หารไม่ได้</span><br>
+                                        <input type="checkbox"  name="problem_factor_p"
+                                            id="problem_factor_p" />
+                                        <span>เขียนไม่ได้ใจความ</span><br>
+                                        <input type="checkbox"  name="problem_factor_p" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_factor_p"
+                                            id="problem_factor_p" placeholder="ระบุ" /></label>
+                                        <br><br>ระดับมัธยมศึกษา<br>
+                                        <input type="checkbox"  name="problem_factor_p"
+                                            id="problem_factor_p" />
+                                        <span>อ่านออกเขียนได้</span><br>
+                                        <input type="checkbox"  name="problem_factor_p" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_factor_p"
+                                            id="problem_factor_p" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        ตามเกณฑ์การวัดและประเมินผล ความสามารถในการอ่านและการเขียน (สถาบันภาษาไทย
+                                        สวก.)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        (เปิดให้เลือกได้มากกว่า 1)
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_education"
+                                            id="assessment_education" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_education"
+                                            id="assessment_education" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_education"
+                                            id="assessment_education" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>25. ด้านสุขภาพ </h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">25.1 สุขภาพกาย <br>
+                                        <input type="checkbox"  name="danger_physicalhealth"
+                                            id="danger_physicalhealth" />
+                                        <span>น้ำหนักเทียบกับอายุ (ค่อนข้างน้อย ค่อนข้างมาก)</span><br>
+                                        <input type="checkbox"  name="danger_physicalhealth"
+                                            id="danger_physicalhealth" />
+                                        <span>ส่วนสูงเทียบอายุ (ค่อนข้างเตี้ย ค่อนข้างสูง)</span><br>
+                                        <input type="checkbox"  name="danger_physicalhealth"
+                                            id="danger_physicalhealth" />
+                                        <span>ส่วนสูงเทียบน้ำหนัก ( เริ่มอ้วน ค่อนข้างผอม)</span><br>
+                                        <input type="checkbox"  name="danger_physicalhealth"
+                                            id="danger_physicalhealth" />
+                                        <span>มีโรคประจำตัวหรือเจ็บป่วย แต่ไม่กระทบต่อการเรียน/การใช้ชีวิตประจำวัน
+                                        </span><br>
+                                        <input type="checkbox"  name="danger_physicalhealth"
+                                            id="danger_physicalhealth" />
+                                        <span>ได้รับบาดเจ็บ/พักฟื้น แต่ไม่กระทบต่อการเรียน/
+                                            การใช้ชีวิตประจำวัน
+                                        </span><br>
+                                        <input type="checkbox"  name="danger_physicalhealth"
+                                            id="danger_physicalhealth" />
+                                        <span>อยู่กับบุคคลในครอบครัวเจ็บป่วยด้วยโรคร้ายแรง/
+                                            เรื้อรัง/ติดต่อ เช่น โรคภูมิคุ้มกันบกพร่อง (HIV)
+                                        </span><br>
+                                        <input type="checkbox"  name="danger_physicalhealth"
+                                            id="danger_physicalhealth" />
+                                        <span>มีปัญหาด้านสายตาและสวมแว่น/คอนแท็คเลนส์</span>
+                                    </td>
+                                    <td>25.1 สุขภาพกาย<br>
+                                        <input type="checkbox"  name="problem_physicalhealth"
+                                            id="problem_physicalhealth" />
+                                        <span>น้ำหนักเทียบกับอายุ(น้อยกว่าเกณฑ์/มากกว่าเกณฑ์)</span><br>
+                                        <input type="checkbox"  name="problem_physicalhealth"
+                                            id="problem_physicalhealth" />
+                                        <span>ส่วนสูงเทียบอายุ (เตี้ย สูง)</span><br>
+                                        <input type="checkbox"  name="problem_physicalhealth"
+                                            id="problem_physicalhealth" />
+                                        <span>ส่วนสูงเทียบน้ำหนัก (อ้วน ท้วม)</span><br>
+                                        <input type="checkbox"  name="problem_physicalhealth"
+                                            id="problem_physicalhealth" />
+                                        <span>มีโรคประจำตัวหรือเจ็บป่วยบ่อย แต่กระทบต่อ
+                                            การเรียน/การใช้ชีวิตประจำวัน
+                                        </span><br>
+                                        <input type="checkbox"  name="problem_physicalhealth"
+                                            id="problem_physicalhealth" />
+                                        <span>ได้รับบาดเจ็บ/พักฟื้น ซึ่งกระทบต่อการเรียน/
+                                            การใช้ชีวิตประจำวัน
+                                        </span><br>
+                                        <input type="checkbox"  name="problem_physicalhealth"
+                                            id="problem_physicalhealth" />
+                                        <span>ป่วยเป็นโรคร้ายแรง/เรื้อรัง เช่น โรคภูมิคุ้มกัน
+                                            บกพร่อง(HIV)
+                                        </span><br>
+                                        <input type="checkbox"  name="problem_physicalhealth"
+                                            id="problem_physicalhealth" />
+                                        <span>มีปัญหาด้านสายตาแต่ไม่สวมแว่น/คอนแท็คเลนส์
+                                            ตาบอดสี
+                                        </span><br>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">25.2 สุขภาพจิต <br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>ท้อแท้เบื่อหน่าย </span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>ไม่อยากไปโรงเรียน (ขาดเรียน/หนีเรียน)</span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>ซนเกินไป/อยู่ไม่นิ่ง </span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>ชอบเหม่อลอย/ใจลอย </span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>อดทนรอคอยไม่ได้ </span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>พัฒนาการช้า คิดอ่านช้า แก้ปัญหาช้า </span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>เก็บตัว/แยกตัว</span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>สัมพันธภาพกับเพื่อน/ครูไม่ดี</span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>ชอบทำผิดกฎ/ระเบียบ</span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>หงุดหงิดง่าย/ขี้หงุดหงิด</span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth"
+                                            id="danger_mentalhealth" />
+                                        <span>อารมณ์แปรปรวน</span><br>
+                                        <input type="checkbox"  name="danger_mentalhealth" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_mentalhealth"
+                                            id="danger_mentalhealth" placeholder="ระบุ" />
+                                    </td>
+                                    <td>25.2 สุขภาพจิต <br>
+                                        <input type="checkbox"  name="problem_mentalhealth"
+                                            id="problem_mentalhealth" />
+                                        <span>เคย/พยายามฆ่าตัวตาย</span><br>
+                                        <input type="checkbox"  name="problem_mentalhealth"
+                                            id="problem_mentalhealth" />
+                                        <span>ประสาทหลอน (เช่น เชื่อว่ามีคนคอยกลั่น แกล้ง ประสงค์ร้าย
+                                            หูแว่ว)</span><br>
+                                        <input type="checkbox"  name="problem_mentalhealth"
+                                            id="problem_mentalhealth" />
+                                        <span>มีปัญหาทางสุขภาพจิต โดยได้รับการวินิจฉัยจากผู้เชี่ยวชาญ</span><br>
+                                        <input type="checkbox"  name="problem_mentalhealth" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_mentalhealth"
+                                            id="problem_mentalhealth" placeholder="ระบุ" />
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_lhealth"
+                                            id="assessment_lhealth" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_lhealth"
+                                            id="assessment_lhealth" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_lhealth"
+                                            id="assessment_lhealth" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>26. ด้านเศรษฐกิจที่ส่งผลต่อการดำเนินชีวิตและการเรียน</h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_life"
+                                            id="danger_life" />
+                                        <span>รายได้เฉลี่ยของสมาชิกครัวเรือนมากกว่า 3,000 – 10,000 บาท/คน/เดือน
+                                            แต่ไม่เพียงพอต่อการดำรงชีพ</span><br>
+                                        <input type="checkbox"  name="danger_life"
+                                            id="danger_life" />
+                                        <span>บิดาหรือมารดาหรือผู้ปกครองไม่มีรายได้</span><br>
+                                        <input type="checkbox"  name="danger_life"
+                                            id="danger_life" />
+                                        <span>ครอบครัวมีภาระพึ่งพิง
+                                            (สมาชิกที่ไม่มีรายได้ต้องดูแลจำนวนหลายคน)</span><br>
+                                        <input type="checkbox"  name="danger_life"
+                                            id="danger_life" />
+                                        <span>พ่อแม่/ผู้ปกครองให้เงินนักเรียนมาใช้ที่โรงเรียนไม่เพียงพอต่อการใช้จ่ายที่จำเป็น</span><br>
+                                        <input type="checkbox"  name="danger_life"
+                                            id="danger_life" />
+                                        <span>นักเรียนไม่ได้รับประทานอาหารเช้าบางวัน</span><br>
+                                        <input type="checkbox"  name="danger_life"
+                                            id="danger_life" />
+                                        <span>(สำหรับนักเรียนมัธยมศึกษา) นักเรียนไม่ได้
+                                            รับประทานอาหารกลางวันบางวัน</span><br>
+                                        <input type="checkbox"  name="danger_life" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_life"
+                                            id="danger_life" placeholder="ระบุ" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="problem_life"
+                                            id="problem_life" />
+                                        <span>รายได้เฉลี่ยของสมาชิกครัวเรือน ไม่เกิน 3,000 บาท/คน/เดือน</span><br>
+                                        <input type="checkbox"  name="problem_life"
+                                            id="problem_life" />
+                                        <span>บิดาและมารดาไม่มีรายได้ทั้ง 2 คน หรือผู้ปกครอง ไม่มีรายได้</span><br>
+                                        <input type="checkbox"  name="problem_life"
+                                            id="problem_life" />
+                                        <span>รายได้ไม่พอต่อการใช้จ่ายในชีวิตประจำวัน</span><br>
+                                        <input type="checkbox"  name="problem_life"
+                                            id="problem_life" />
+                                        <span>ครอบครัวมีภาระหนี้สินจำนวนมาก/ล้มละลาย</span><br>
+                                        <input type="checkbox"  name="problem_life"
+                                            id="problem_life" />
+                                        <span>พ่อแม่/ผู้ปกครองไม่ให้/ไม่มีเงินให้นักเรียนมาใช้ที่โรงเรียน
+                                        </span><br>
+                                        <input type="checkbox"  name="problem_life"
+                                            id="problem_life" />
+                                        <span>นักเรียนไม่ได้รับประทานอาหารเช้าบ่อยครั้ง</span><br>
+                                        <input type="checkbox"  name="problem_life"
+                                            id="problem_life" />
+                                        <span>(สำหรับนักเรียนมัธยมศึกษา)
+                                            นักเรียนไม่ได้รับประทานอาหารกลางวันบ่อยครั้ง </span><br>
+                                        <input type="checkbox"  name="problem_life" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_life"
+                                            id="problem_life" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_life"
+                                            id="assessment_life" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_life"
+                                            id="assessment_life" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_life"
+                                            id="assessment_life" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>27. ด้านสวัสดิภาพและความปลอดภัย </h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">27.1 สวัสดิภาพ <br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>พ่อแม่แยกทางกัน หรือแต่งงานใหม่</span><br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>เด็กกำพร้า แต่มีผู้ดูแล</span><br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>ถูกทอดทิ้ง แต่มีผู้ดูแล</span><br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>ขัดแย้ง/ทะเลาะกับบุคคลในครอบครัว</span><br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>อยู่กับบุคคลในครอบครัวเจ็บป่วยด้วยโรคร้ายแรง/เรื้อรัง/ติดต่อ เช่น
+                                            โรคภูมิคุ้มกันบกพร่อง (HIV) </span><br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>อยู่กับบุคคลในครอบครัวที่ติดสารเสพติด</span><br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>อยู่กับบุคคลในครอบครัวที่เล่นการพนัน</span><br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>ที่พักอาศัยอยู่ในชุมชนแออัดหรือใกล้แหล่งมั่วสุม/สถานเริงรมย์/แหล่งระบาดโรคติดต่อร้ายแรง/เปลี่ยว</span><br>
+                                        <input type="checkbox"  name="danger_welfare"
+                                            id="danger_welfare" />
+                                        <span>อยู่หอพัก/อยู่กับบุคคลที่ไม่ใช่บิดา มารดา </span><br>
+                                        <input type="checkbox"  name="danger_welfare" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_welfare"
+                                            id="danger_welfare" placeholder="ระบุ" />
+                                    </td>
+                                    <td>27.1 สวัสดิภาพ<br>
+                                        <input type="checkbox"  name="problem_welfare"
+                                            id="problem_welfare" />
+                                        <span>ไม่มีผู้ดูแล</span><br>
+                                        <input type="checkbox"  name="problem_welfare"
+                                            id="problem_welfare" />
+                                        <span>เด็กกำพร้าและไม่มีผู้ดูแล</span><br>
+                                        <input type="checkbox"  name="problem_welfare"
+                                            id="problem_welfare" />
+                                        <span>ถูกทอดทิ้งและไม่มีผู้ดูแล</span><br>
+                                        <input type="checkbox"  name="problem_welfare"
+                                            id="problem_welfare" />
+                                        <span>ถูกลวนลาม/ละเมิดทางเพศ</span><br>
+                                        <input type="checkbox"  name="problem_welfare"
+                                            id="problem_welfare" />
+                                        <span>มีความขัดแย้งและมีการใช้ความรุนแรง/ถูกทารุณ/ทำร้ายจากบุคคลในครอบครัว/โรงเรียน
+                                        </span><br>
+                                        <input type="checkbox"  name="problem_welfare"
+                                            id="problem_welfare" />
+                                        <span>เล่นการพนัน </span><br>
+                                        <input type="checkbox"  name="problem_welfare" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_welfare"
+                                            id="problem_welfare" placeholder="ระบุ" />
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">27.2 ความปลอดภัยในการดำเนินชีวิต <br>
+                                        <input type="checkbox"  name="danger_security"
+                                            id="danger_security" />
+                                        <span>สภาพที่พักอาศัยไม่แข็งแรง
+                                            <br> - มีสภาพทรุดโทรม/ไม่ปลอดภัย/ทำจากวัสดุท้องถิ่น (ไม่ไผ่
+                                            ใบจากหรือวัสดุเหลือใช้)
+                                            <br> - ไม่มีห้องส้วมในที่อยู่อาศัยและบริเวณบ้าน
+                                            <br> - สภาพแวดล้อมบริเวณบ้าน <input type="radio" 
+                                                name="danger_security" id="danger_security" required />
+                                            <span>ปลอดภัย</span><input type="radio" 
+                                                name="danger_security" id="danger_security" required />
+                                            <span>เสี่ยง</span></span>
+
+                                        <br>
+                                        <input type="checkbox"  name="danger_security"
+                                            id="danger_security" />
+                                        <span>ชุมชนที่อาศัยมีเคยมีเหตุอาชญากรรม</span><br>
+                                        <input type="checkbox"  name="danger_security"
+                                            id="danger_security" />
+                                        <span>ชุมชนที่อาศัยมีเคยมีอุบัติเหตุ</span><br>
+                                        <input type="checkbox"  name="danger_security" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_security"
+                                            id="danger_security" placeholder="ระบุ" />
+                                    </td>
+                                    <td>27.2 ความปลอดภัยในการดำเนินชีวิต<br>
+                                        <input type="checkbox"  name="problem_security"
+                                            id="problem_security" />
+                                        <span>สภาพที่พักอาศัยไม่ปลอดภัย</span><br>
+                                        <input type="checkbox"  name="problem_security"
+                                            id="problem_security" />
+                                        <span>ชุมชนที่อาศัยมีเหตุอาชญากรรมบ่อยครั้ง</span><br>
+                                        <input type="checkbox"  name="problem_security"
+                                            id="problem_security" />
+                                        <span>ชุมชนที่อาศัยมีอุบัติเหตุบ่อยครั้ง</span><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_security"
+                                            id="assessment_security" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_security"
+                                            id="assessment_security" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_security"
+                                            id="assessment_security" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                                <tr>
+                                    <td scope="row">27.3 ความปลอดภัยด้านภัยพิบัติ <br>
+                                        <input type="checkbox"  name="danger_disaster"
+                                            id="danger_disaster" />
+                                        <span>สภาพที่พักอาศัยอยู่ในพื้นที่แผ่นดินไหว</span><br>
+                                        <input type="checkbox"  name="danger_disaster"
+                                            id="danger_disaster" />
+                                        <span>สภาพที่พักอาศัยอยู่ในพื้นที่ดินถล่ม</span><br>
+                                        <input type="checkbox"  name="danger_disaster"
+                                            id="danger_disaster" />
+                                        <span>สภาพที่พักอาศัยอยู่ในพื้นที่อุทกภัย</span><br>
+                                        <input type="checkbox"  name="danger_disaster"
+                                            id="danger_disaster" />
+                                        <span>สภาพที่พักอาศัยอยู่ในพื้นที่วาตภัย</span><br>
+                                        <input type="checkbox"  name="danger_disaster"
+                                            id="danger_disaster" />
+                                        <span>สภาพที่พักอาศัยอยู่ในพื้นที่มลพิษทางอากาศ</span><br>
+                                        <input type="checkbox"  name="danger_disaster"
+                                            id="danger_disaster" />
+                                        <span>สภาพที่พักอาศัยอยู่ในพื้นที่มลพิษทางเสียง</span><br>
+                                        <input type="checkbox"  name="danger_disaster"
+                                            id="danger_disaster" />
+                                        <span>สภาพที่พักอาศัยอยู่ในพื้นที่โรคระบาด</span><br>
+                                        <input type="checkbox"  name="danger_disaster" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_disaster"
+                                            id="danger_disaster" placeholder="ระบุ" />
+                                    </td>
+                                    <td>27.3 ความปลอดภัยด้านภัยพิบัติ</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_disaster"
+                                            id="assessment_disaster" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_disaster"
+                                            id="assessment_disaster" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_disaster"
+                                            id="assessment_disaster" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                                <tr>
+                                    <td scope="row">27.4 ความปลอดภัยด้านการเดินทาง <br>
+                                        <input type="checkbox"  name="danger_trip"
+                                            id="danger_trip" />
+                                        <span>เดินทางโดยการขับขี่รถจักรยายนต์</span><br>
+                                        <input type="checkbox"  name="danger_trip"
+                                            id="danger_trip" />
+                                        <span>เดินทางโดยการโดยสารรถจักรยายนต์</span><br>
+                                        <input type="checkbox"  name="danger_trip"
+                                            id="danger_trip" />
+                                        <span>พาหนะหรือสภาพการเดินทางไม่ปลอดภัย</span><br>
+                                        <input type="checkbox"  name="danger_trip"
+                                            id="danger_trip" />
+                                        <span>สภาพแวดล้อมระหว่างการเดินทางมีความเสี่ยง</span><br>
+                                        <input type="checkbox"  name="danger_trip"
+                                            id="danger_trip" />
+                                        <span>ไม่ปฏิบัติตามกฎหมายจราจรบางครั้ง</span><br>
+                                        <input type="checkbox"  name="danger_trip" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_trip"
+                                            id="danger_trip" placeholder="ระบุ" />
+                                    </td>
+                                    <td>27.4 ความปลอดภัยด้านการเดินทาง<br>
+                                        <input type="checkbox"  name="problem_trip"
+                                            id="problem_trip" />
+                                        <span>พาหนะและสภาพการเดินทางไม่ปลอดภัย</span><br>
+                                        <input type="checkbox"  name="problem_trip"
+                                            id="problem_trip" />
+                                        <span>สภาพแวดล้อมระหว่างการเดินทางไม่ปลอดภัย</span><br>
+                                        <input type="checkbox"  name="problem_trip"
+                                            id="problem_trip" />
+                                        <span>ไม่ปฏิบัติตามกฎหมายจราจรบ่อยหรือเป็นประจำ</span><br>
+                                        <input type="checkbox"  name="problem_trip" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_trip"
+                                            id="problem_trip" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_trip"
+                                            id="assessment_trip" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_trip"
+                                            id="assessment_trip" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_trip"
+                                            id="assessment_trip" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>28. ด้านพฤติกรรมการใช้สารเสพติด </h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_narcotic"
+                                            id="danger_narcotic" />
+                                        <span>มีสมาชิกในครอบครัวเกี่ยวข้องกับยาเสพติด เช่น เสพ ค้า ส่งยา </span><br>
+                                        <input type="checkbox"  name="danger_narcotic"
+                                            id="danger_narcotic" />
+                                        <span>อยู่ในชุมชน/สภาพแวดล้อมที่ใช้สารเสพติด</span><br>
+                                        <input type="checkbox"  name="danger_narcotic"
+                                            id="danger_narcotic" />
+                                        <span>คบเพื่อนในกลุ่มที่เกี่ยวข้องหรือใช้สารเสพติด เช่น
+                                            บุหรี่ สุรา
+                                        </span><br>
+                                        <input type="checkbox"  name="danger_narcotic"
+                                            id="danger_narcotic" />
+                                        <span>เคยทดลองใช้บุหรี่ สุรา และสารเสพติด</span><br>
+                                        <input type="checkbox"  name="danger_narcotic" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_narcotic"
+                                            id="danger_narcotic" placeholder="ระบุ" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="problem_narcotic"
+                                            id="problem_narcotic" />
+                                        <span>สมาชิกในครอบครัวเกี่ยวข้องและค้ายาเสพติด</span><br>
+                                        <input type="checkbox"  name="problem_narcotic"
+                                            id="problem_narcotic" />
+                                        <span>สมาชิกในครอบครัวใช้ยาเสพติด</span><br>
+                                        <input type="checkbox"  name="problem_narcotic"
+                                            id="problem_narcotic" />
+                                        <span>เป็นผู้ติดบุหรี่ สุรา หรือการใช้สารเสพติดอื่นๆ&nbsp;&nbsp;</span><br>
+                                        <input type="checkbox"  name="problem_narcotic"
+                                            id="problem_narcotic" />
+                                        <span>มีประวัติเกี่ยวข้องกับสารเสพติด (ค้ายา/ส่งยา)</span><br>
+                                        <input type="checkbox"  name="problem_narcotic"
+                                            id="problem_narcotic" />
+                                        <span>ใช้หรือเสพเองมากกว่า 2 ครั้ง</span><br>
+                                        <input type="checkbox"  name="problem_narcotic" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_narcotic"
+                                            id="problem_narcotic" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_narcotic"
+                                            id="assessment_narcotic" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_narcotic"
+                                            id="assessment_narcotic" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_narcotic"
+                                            id="assessment_narcotic" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>29. ด้านพฤติกรรมการใช้ความรุนแรง </h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_severity"
+                                            id="danger_severity" />
+                                        <span>มีการทะเลาะวิวาท</span><br>
+                                        <input type="checkbox"  name="danger_severity"
+                                            id="danger_severity" />
+                                        <span>ก้าวร้าว เกเร</span><br>
+                                        <input type="checkbox"  name="danger_severity"
+                                            id="danger_severity" />
+                                        <span>เคย/ถูก ล้อเลียน แกล้ง รังแกผู้อื่นเป็นประจำ </span><br>
+                                        <input type="checkbox"  name="danger_severity"
+                                            id="danger_severity" />
+                                        <span>มีความคิดทำร้ายผู้อื่น หรือตนเอง</span><br>
+                                        <input type="checkbox"  name="danger_severity"
+                                            id="danger_severity" />
+                                        <span>ว่า/ด่าผู้อื่นด้วยคำหยาบคาย</span><br>
+                                        <input type="checkbox"  name="danger_severity"
+                                            id="danger_severity" />
+                                        <span>เข้าร่วม/เป็นสมาชิกกลุ่มที่มีพฤติกรรมใช้ความรุนแรง</span><br>
+                                        <input type="checkbox"  name="danger_severity" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_severity"
+                                            id="danger_severity" placeholder="ระบุ" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="broblem_severity"
+                                            id="broblem_severity" />
+                                        <span>ทะเลาะวิวาทเป็นประจำ</span><br>
+                                        <input type="checkbox"  name="broblem_severity"
+                                            id="broblem_severity" />
+                                        <span>มีพฤติกรรมรีดไถ</span><br>
+                                        <input type="checkbox"  name="broblem_severity"
+                                            id="broblem_severity" />
+                                        <span>เป็นผู้ล้อเลียน แกล้ง รังแกผู้อื่น</span><br>
+                                        <input type="checkbox"  name="broblem_severity"
+                                            id="broblem_severity" />
+                                        <span>ทำร้ายร่างกายผู้อื่น </span><br>
+                                        <input type="checkbox"  name="broblem_severity"
+                                            id="broblem_severity" />
+                                        <span>ทำร้ายร่างกายตนเอง</span><br>
+                                        <input type="checkbox"  name="broblem_severity"
+                                            id="broblem_severity" />
+                                        <span>ใช้คำพูดข่มขู่ผู้อื่น</span><br>
+                                        <input type="checkbox"  name="broblem_severity"
+                                            id="broblem_severity" />
+                                        <span>เป็นหัวโจก/หัวหน้าแก๊ง</span><br>
+                                        <input type="checkbox"  name="broblem_severity" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="broblem_severity"
+                                            id="broblem_severity" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_severity"
+                                            id="assessment_severity" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_severity"
+                                            id="assessment_severity" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_severity"
+                                            id="assessment_severity" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>30. ด้านพฤติกรรมทางเพศ</h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_sex"
+                                            id="danger_sex" />
+                                        <span>คนในครอบครัวเกี่ยวข้องกับการขายบริการทางเพศ</span><br>
+                                        <input type="checkbox"  name="danger_sex"
+                                            id="danger_sex" />
+                                        <span>คบเพื่อนที่อยู่ในกลุ่มขายบริการทางเพศ</span><br>
+                                        <input type="checkbox"  name="danger_sex"
+                                            id="danger_sex" />
+                                        <span>เลียนแบบพฤติกรรมที่ไม่พึงประสงค์ทางเพศ</span><br>
+                                        <input type="checkbox"  name="danger_sex"
+                                            id="danger_sex" />
+                                        <span>ใช้โทรศัพท์มือถือและเครื่องมือสื่อสารรับ –
+                                            ส่งข้อความ/คลิป/ภาพ/ข้อมูลที่ไม่พึงประสงค์ด้านเพศ</span><br>
+                                        <input type="checkbox"  name="danger_sex"
+                                            id="danger_sex" />
+                                        <span>แสดงความคิดเห็นและส่งต่อข้อความ/คลิป/ภาพ/ข้อมูลที่ไม่พึงประสงค์ด้านเพศ
+                                        </span><br>
+                                        <input type="checkbox"  name="danger_sex"
+                                            id="danger_sex" />
+                                        <span>ทำงานพิเศษที่เสี่ยงต่อการถูกลวนลาม/ล่วงละเมิดทางเพศ</span><br>
+                                        <input type="checkbox"  name="danger_sex" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_sex"
+                                            id="danger_sex" placeholder="ระบุ" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>ขายบริการทางเพศ</span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>ชักชวน/หลอกเพื่อนขายบริการทางเพศ</span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>ใช้โทรศัพท์มือถือและเครื่องมือสื่อสารรับ –
+                                            ส่งข้อความ/คลิป/ภาพ/ข้อมูลที่ไม่พึงประสงค์ด้านเพศบ่อยครั้ง </span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>สร้างและเผยแพร่ข้อความ/คลิป/ภาพ/ข้อมูลที่ไม่พึงประสงค์ด้านเพศ</span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>มีพฤติกรรมส่อไปในทางชู้สาว</span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>จับคู่ชัดเจนและแยกกลุ่มอยู่ด้วยกันสองต่อสองบ่อยครั้งในที่ลับตา
+                                        </span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>มีเพศสัมพันธ์ในวัยเรียน</span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>เป็นโรคติดต่อทางเพศสัมพันธ์</span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>ถูกล่วงละเมิดทางเพศ</span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>ล่วงละเมิดทางเพศผู้อื่น </span><br>
+                                        <input type="checkbox"  name="problem_sex"
+                                            id="problem_sex" />
+                                        <span>ตั้งครรภ์</span><br>
+                                        <input type="checkbox"  name="problem_sex" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_sex"
+                                            id="problem_sex" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_sex"
+                                            id="assessment_sex" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_sex"
+                                            id="assessment_sex" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_sex"
+                                            id="assessment_sex" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>31. ด้านการติดเกมและการพนัน</h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_betting"
+                                            id="danger_betting" />
+                                        <span>หมกมุ่นกับการใช้อินเทอร์เน็ตหรือเล่นเกมที่ไม่ใช่การใช้งานตามปกติ</span><br>
+                                        <input type="checkbox"  name="danger_betting"
+                                            id="danger_betting" />
+                                        <span>เวลาว่างส่วนใหญ่หมดไปกับการใช้อินเทอร์เน็ตหรือเล่นเกม
+                                            และเลิกทำกิจกรรมที่เคยชอบ/สนใจ</span><br>
+                                        <input type="checkbox"  name="danger_betting"
+                                            id="danger_betting" />
+                                        <span>กระสับกระส่าย หงุดหงิด อารมณ์เสีย เวลาไม่ได้เล่น
+                                            และอาจถึงขั้นก้าวร้าวได้เมื่อขอให้ถูกเลิกใช้หรือหยุดเล่น</span><br>
+                                        <input type="checkbox"  name="danger_betting"
+                                            id="danger_betting" />
+                                        <span>กลุ่มเพื่อนที่คบด้วยชอบเล่นเกมเหมือนกัน และเรื่องที่คุยกับเพื่อนๆ
+                                            มักเป็นเรื่องเกี่ยวกับเกม</span><br>
+                                        <input type="checkbox"  name="danger_betting"
+                                            id="danger_betting" />
+                                        <span>เคยโดดเรียนเพื่อไปเล่นเกม</span><br>
+                                        <input type="checkbox"  name="danger_betting"
+                                            id="danger_betting" />
+                                        <span>ใช้เงินไปกับการซื้อเกมหรือเล่นเกมมากขึ้น</span><br>
+                                        <input type="checkbox"  name="danger_betting"
+                                            id="danger_betting" />
+                                        <span>พยายามลดเวลาใช้อินเตอร์เน็ตหรือเล่นเล่นลงแต่ไม่สำเร็จ</span><br>
+                                        <input type="checkbox"  name="danger_betting" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_betting"
+                                            id="danger_betting" placeholder="ระบุ" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="problem_betting"
+                                            id="problem_betting" />
+                                        <span>ได้รับการวินิจฉัยจากผู้เชี่ยวชาญว่าเป็นผู้ติดเกม</span><br>
+                                        <input type="checkbox"  name="problem_betting" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_betting"
+                                            id="problem_betting" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_betting"
+                                            id="assessment_betting" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_betting"
+                                            id="assessment_betting" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_betting"
+                                            id="assessment_betting" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>32. การใช้โทรศัพท์มือถือและเครื่องมือสื่อสาร</h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_telephone"
+                                            id="danger_telephone" />
+                                        <span>ใช้งานในระหว่างการเรียน</span><br>
+                                        <input type="checkbox"  name="danger_telephone"
+                                            id="danger_telephone" />
+                                        <span>เข้าใช้โซเชียลมีเดียไม่เกิน 2 ชั่วโมงต่อวัน</span><br>
+                                        <input type="checkbox"  name="danger_telephone"
+                                            id="danger_telephone" />
+                                        <span>ใช้งานที่ไม่เกี่ยวข้องกับการเรียนเป็นเวลานาน</span><br>
+                                        <input type="checkbox"  name="danger_telephone"
+                                            id="danger_telephone" />
+                                        <span>แสดงความคิดเห็นและส่งต่อสื่อ/คลิป/ข้อความที่ไม่เหมาะสม </span><br>
+                                        <input type="checkbox"  name="danger_telephone" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_telephone"
+                                            id="danger_telephone" placeholder="ระบุ" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="problem_telephone"
+                                            id="problem_telephone" />
+                                        <span>ใช้งานในระหว่างการเรียนบ่อยครั้ง/เป็นประจำ</span><br>
+                                        <input type="checkbox"  name="problem_telephone"
+                                            id="problem_telephone" />
+                                        <span>เข้าใช้โซเชียลมีเดียเกิน 2 ชั่วโมงต่อวัน</span><br>
+                                        <input type="checkbox"  name="problem_telephone"
+                                            id="problem_telephone" />
+                                        <span>ใช้งานและมีผลกระทบต่อการเรียน/การใช้ชีวิตประจำวัน</span><br>
+                                        <input type="checkbox"  name="problem_telephone"
+                                            id="problem_telephone" />
+                                        <span>สร้างและเผยแพร่สื่อ/คลิป/ข้อความที่ไม่เหมาะสม</span><br>
+                                        <input type="checkbox"  name="problem_telephone" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_telephone"
+                                            id="problem_telephone" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_telephone"
+                                            id="assessment_telephone" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_telephone"
+                                            id="assessment_telephone" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_telephone"
+                                            id="assessment_telephone" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>33. นักเรียนที่มีความต้องการพิเศษ </h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>มีความบกพร่องทางการเห็น</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>มีความบกพร่องทางการได้ยิน</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>มีความบกพร่องทางสติปัญญา</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>มีความบกพร่องทางร่างกายและสุขภาพ</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>มีความบกพร่องทางการเรียนรู้</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>มีความบกพร่องทางพฤติกรรมหรืออารมณ์</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>มีความบกพร่องทางการพูดและภาษา</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>ออทิสติก</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>สมาธิสั้น</span><br>
+                                        <input type="checkbox"  name="danger_special"
+                                            id="danger_special" />
+                                        <span>พิการซ้ำซ้อน (มีความบกพร่องตั้งแต่ 2 ประเภทขึ้นไป)</span><br>
+                                        <input type="checkbox"  name="danger_special" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="danger_special"
+                                            id="danger_special" placeholder="ระบุ" />
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>มีความบกพร่องทางการเห็น</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>มีความบกพร่องทางการได้ยิน</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>มีความบกพร่องทางสติปัญญา</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>มีความบกพร่องทางร่างกายและสุขภาพ</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>มีความบกพร่องทางการเรียนรู้</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>มีความบกพร่องทางพฤติกรรมหรืออารมณ์</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>มีความบกพร่องทางการพูดและภาษา</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>ออทิสติก</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>สมาธิสั้น</span><br>
+                                        <input type="checkbox"  name="problem_special"
+                                            id="problem_special" />
+                                        <span>พิการซ้ำซ้อน (มีความบกพร่องตั้งแต่ 2 ประเภทขึ้นไป)</span><br>
+                                        <input type="checkbox"  name="problem_special" />
+                                        <span>อื่นๆ&nbsp;&nbsp;</span><input type="text" name="problem_special"
+                                            id="problem_special" placeholder="ระบุ" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_special"
+                                            id="assessment_special" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_special"
+                                            id="assessment_special" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_special"
+                                            id="assessment_special" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>34 .ด้านการดำรงชีวิต </h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_life2"
+                                            id="danger_life2" />
+                                        <span>ไม่ผ่านการประเมินทักษะการดำรงชีวิต 1 ข้อ</span><br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="problem_life2"
+                                            id="problem_life2" />
+                                        <span>ไม่ผ่านการประเมินทักษะการดำรงชีวิตมากกว่า 1 ข้อ</span><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_life2"
+                                            id="assessment_life2" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_life2"
+                                            id="assessment_life2" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_life2"
+                                            id="assessment_life2" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <h5>35. ชนกลุ่มน้อย </h5>
+                <br>
+                <div class="form-row">
+                    <div class="col-md">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มเสี่ยง</th>
+                                    <th scope="col">แนวทางการพิจารณากลุ่มมีปัญหา</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">
+                                        <input type="checkbox"  name="danger_tribe"
+                                            id="danger_tribe" />
+                                        <span>อยู่ระหว่างดำเนินการขอสัญชาติ</span><br>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox"  name="problem_tribe"
+                                            id="problem_tribe" />
+                                        <span>ไม่มีเลขประจำตัว 13 หลัก</span><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        ผลการประเมินโดยครูประจำชั้น/ครูที่ปรึกษา
+                                        <br>
+                                        <input type="checkbox"  name="assessment_tribe"
+                                            id="assessment_tribe" />
+                                        <span>กลุ่มปกติ</span>
+                                        <input type="checkbox"  name="assessment_tribe"
+                                            id="assessment_tribe" />
+                                        <span>กลุ่มเสี่ยง</span>
+                                        <input type="checkbox"  name="assessment_tribe"
+                                            id="assessment_tribe" />
+                                        <span>กลุ่มมีปัญหา</span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+           
+            <br>
+            <a href="index3.html" class="btn btn-secondary">&laquo; Previous</a>
+            <button class="btn btn-success" type="submit">SAVE</button>
+            <a href="index5.html" class="btn btn-primary">Next &raquo;</a>
+    </form>
+    </div>
+</body>
+
+
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+     <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+     <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+ 
+     <!-- Add Firebase products that you want to use -->
+     <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+ 
+ 
+<script src="script.js"></script>
+</body>
+</html>

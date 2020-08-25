@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-end"><a href="index.html" class="btn btn-danger">LOGOUT</a></div>
+        <br>
+        <h3>รายชื่อ</h3><br>
+
+        <div class="form-row">
+            <a href="form1.html" class="btn btn-primary">&plus; เพิ่มรายชื่อ</a>
+        </div><br>
+        <!-- <div class="form-row">
+            <div class="col-md">
+                <input type="text" class="form-control" id="myInput" onkeyup="sec()" placeholder="Search ..">
+            </div>
+        </div> -->
+        <ul id="myUL">
+            <div class="form-row">
+                <div class="col-md">
+                    <!-- <table class="table table-bordered" id = "tbresult" >
+                            <tr>
+                                <th scope="col">สังกัด</th>
+                                <th scope="col">โรงเรียน</th>
+                                <th scope="col">ชื่อ</th>
+                                <th scope="col">ชื่อสกุล</th>
+                                <th scope="col">เลขประจำตัวประชาชน</th>
+                                <th scope="col">การดำเนินการ</th>
+                            </tr>
+                    </table> -->
+                    <table id="table" class="display" width="100%"></table>
+                </div>
+            </div>
+        </ul>
+
+    </div>
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+        
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
